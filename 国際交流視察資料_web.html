@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鹿追町の国際交流と幼小中高一貫教育</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic UI','Meiryo',sans-serif;
+  background:#dde3ea;
+  color:#1a2a3a;
+  font-size:20px;
+  line-height:1.7;
+}
+
+.page{
+  background:#fff;
+  margin:0 0 8px 0;
+  padding:48px 60px;
+  box-shadow:0 1px 3px rgba(0,0,0,.06);
+}
+
+/* ── ページヘッダー ── */
+.page-header{
+  background:linear-gradient(135deg,#1a3a5c 0%,#2c3e50 55%,#c8102e 100%);
+  color:#fff;border-radius:6px;
+  padding:20px 24px;margin-bottom:20px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.ph-main h1{font-size:1.5rem;font-weight:900;line-height:1.25;letter-spacing:.02em}
+.ph-main .sub{font-size:.9rem;opacity:.88;margin-top:6px;font-weight:400}
+.ph-badge{
+  text-align:right;font-size:1rem;opacity:.85;white-space:nowrap;
+  border-left:1px solid rgba(255,255,255,.3);padding-left:16px;flex-shrink:0;
+}
+.ph-badge strong{display:block;font-size:1rem;margin-bottom:2px}
+
+/* ── セクションラベル ── */
+.sec-lbl{
+  font-size:1rem;font-weight:700;letter-spacing:.08em;
+  color:#1a3a5c;border-left:3.5px solid #c8102e;padding-left:10px;
+  margin-bottom:12px;
+}
+
+/* ── 姉妹提携 ── */
+.sister{margin-bottom:20px}
+.sister-bar{
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  background:linear-gradient(to right,#fff5f5,#f0f5fa);
+  border:1px solid #ddd;border-radius:6px;padding:14px 20px;
+  margin-bottom:12px;
+}
+.flag{font-size:2rem;line-height:1;flex-shrink:0}
+.town-name{font-size:1rem;font-weight:700;color:#1a3a5c}
+.town-sub{font-size:1rem;color:#5d6d7e;margin-top:2px}
+.connect{font-size:1.8rem;color:#c8102e;opacity:.65;font-weight:900;flex:1;text-align:center}
+.since-tag{
+  background:#c8102e;color:#fff;border-radius:5px;
+  padding:8px 14px;font-size:1rem;font-weight:700;
+  text-align:center;white-space:nowrap;flex-shrink:0;line-height:1.5;
+}
+
+.stats-row{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px;
+}
+.sstat{
+  background:#1a3a5c;color:#fff;border-radius:6px;
+  padding:14px 8px;text-align:center;
+}
+.sstat .n{font-size:1.6rem;font-weight:900;color:#f5c842;line-height:1.1}
+.sstat .u{font-size:.9rem;opacity:.8}
+.sstat .l{font-size:.9rem;opacity:.88;margin-top:4px}
+
+.award-note{
+  background:#fef9e7;border:1px solid #e8c84a;border-radius:6px;
+  padding:12px 16px;font-size:1rem;color:#5a4a0a;
+  display:flex;align-items:flex-start;gap:10px;
+}
+.award-note .icon{font-size:1.1rem;line-height:1.1;flex-shrink:0}
+
+/* ── 3文脈 ── */
+.contexts{margin-bottom:20px}
+.ctx-flow{display:flex;align-items:stretch;gap:0}
+.ctx-card{flex:1;border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.ctx-head{padding:12px 14px;color:#fff;display:flex;align-items:flex-start;gap:8px}
+.ctx-num{font-size:1.6rem;font-weight:900;opacity:.25;line-height:1;flex-shrink:0}
+.ctx-ht .ctx-title{font-size:1.05rem;font-weight:700;line-height:1.3}
+.ctx-ht .ctx-period{font-size:.9rem;opacity:.85;margin-top:2px}
+.ctx-body{
+  flex:1;padding:14px;
+  background:#f9f9fb;border:1px solid #e8e8ee;border-top:none;
+  font-size:1rem;line-height:1.7;color:#2c3e50;
+  border-radius:0 0 6px 6px;
+}
+.ctx-body li{margin-left:12px;margin-bottom:4px}
+.ctx-body strong{color:#1a3a5c}
+.ctx-a .ctx-head{background:#c8102e}
+.ctx-b .ctx-head{background:#c67c0e}
+.ctx-c .ctx-head{background:#1a3a5c}
+.ctx-arrow{
+  display:flex;align-items:center;color:#ccc;
+  font-size:1.2rem;padding:0 8px;flex-shrink:0;
+  align-self:flex-start;margin-top:36px;
+}
+
+/* ── ロードマップ ── */
+.roadmap{margin-bottom:8px}
+.rm-track{
+  display:flex;border-radius:6px;overflow:hidden;
+  border:1.5px solid #dde3ee;margin-bottom:12px;
+}
+.rs{flex:1;padding:14px 12px;border-right:1px dashed #dde3ee}
+.rs:last-child{border-right:none}
+.rs-school{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.rs-age{font-size:.88rem;color:#888;margin-bottom:8px}
+.rs-kw{font-size:1rem;font-weight:700;margin-bottom:8px;padding:6px 0;border-top:2.5px solid}
+.rs-desc{font-size:1rem;color:#2c3e50;line-height:1.6}
+.rs-tag{
+  display:inline-block;font-size:.88rem;font-weight:700;
+  color:#fff;padding:3px 8px;border-radius:3px;margin-top:8px;
+}
+.rs-en{background:#e8f8ee}.rs-en .rs-kw{color:#1a8a45;border-color:#1a8a45}.rs-en .rs-tag{background:#1a8a45}
+.rs-el{background:#e8f0fb}.rs-el .rs-kw{color:#2471a3;border-color:#2471a3}.rs-el .rs-tag{background:#2471a3}
+.rs-jh{background:#fff4e8}.rs-jh .rs-kw{color:#c67c0e;border-color:#c67c0e}.rs-jh .rs-tag{background:#c67c0e}
+.rs-hs{background:#fde8ec}.rs-hs .rs-kw{color:#c8102e;border-color:#c8102e}.rs-hs .rs-tag{background:#c8102e}
+
+.rm-concept{
+  background:#1a3a5c;color:#fff;border-radius:6px;
+  padding:14px 20px;font-size:1rem;line-height:1.85;
+}
+.rm-concept .rc-title{
+  font-size:1.05rem;font-weight:700;color:#f5c842;margin-bottom:6px;
+}
+
+/* ── アンケート ── */
+.survey-sec{margin-bottom:20px}
+.survey-inner{
+  display:grid;grid-template-columns:auto 1fr;gap:16px;
+  background:#fff5f5;border:1.5px solid #e8a0a0;border-radius:6px;padding:14px 16px;
+}
+.sv-left{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:100px}
+.sv-pct{font-size:2.2rem;font-weight:900;color:#c8102e;line-height:1}
+.sv-pct-lbl{font-size:.9rem;color:#c8102e;font-weight:700;text-align:center;margin-top:2px}
+.sv-rank{font-size:.9rem;color:#888;text-align:center;margin-top:2px}
+.sv-right{display:flex;flex-direction:column;gap:8px}
+.sv-bars{}
+.sv-bar-item{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.sv-bar-lbl{font-size:.9rem;color:#2c3e50;width:140px;flex-shrink:0;text-align:right}
+.sv-bar-track{flex:1;background:#e8e8ed;border-radius:3px;height:22px;overflow:hidden}
+.sv-bar-fill{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:8px;font-size:.9rem;font-weight:700;color:#fff}
+.sv-bar-pct{font-size:.9rem;font-weight:700;color:#2c3e50;width:42px;flex-shrink:0}
+.sv-bottom{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.sv-tag{background:#1a3a5c;color:#fff;border-radius:3px;padding:6px 12px;font-size:.9rem;font-weight:700;white-space:nowrap}
+.sv-note{font-size:.9rem;color:#5d6d7e;line-height:1.6}
+
+/* ── PAGE 2 ── */
+.p2-head{
+  background:linear-gradient(135deg,#c8102e 0%,#1a3a5c 100%);
+  color:#fff;border-radius:6px;padding:18px 24px;
+  margin-bottom:20px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.p2-head h2{font-size:1.2rem;font-weight:900}
+.p2-head .sub{font-size:1rem;opacity:.88;margin-top:4px}
+.p2-head .right{text-align:right;font-size:.9rem;opacity:.85;white-space:nowrap;flex-shrink:0;padding-left:16px;margin-left:12px;border-left:1px solid rgba(255,255,255,.3)}
+
+/* ── グラフ ── */
+.chart-wrap{
+  background:#f5f6fa;border-radius:6px;
+  padding:16px;margin-bottom:20px;
+}
+.chart-top{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  margin-bottom:12px;flex-wrap:wrap;gap:8px;
+}
+.chart-top h3{font-size:1.05rem;font-weight:700;color:#1a3a5c}
+.chart-top .note{font-size:.88rem;color:#888;margin-top:4px}
+.legend{display:flex;gap:16px;flex-wrap:wrap}
+.leg{display:flex;align-items:center;gap:6px;font-size:.9rem;color:#5d6d7e}
+.leg-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+
+/* ── 2カラム ── */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+
+/* ── 費用 ── */
+.cost-total{
+  background:#1a3a5c;color:#fff;border-radius:6px;
+  padding:14px 20px;margin-bottom:10px;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.ct-l .lbl{font-size:.88rem;opacity:.8}
+.ct-l .val{font-size:1.7rem;font-weight:900;color:#f5c842;line-height:1.1}
+.ct-l .unit{font-size:.88rem;opacity:.8}
+.ct-r{text-align:right}
+.ct-r .lbl{font-size:.88rem;opacity:.8}
+.ct-r .val{font-size:1.1rem;font-weight:900;color:#f5c842}
+.ct-r .note{font-size:.9rem;opacity:.7;margin-top:2px}
+.cost-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 14px;border-radius:5px;margin-bottom:8px;font-size:1rem;
+}
+.cost-row.town{background:#e8f0fb}
+.cost-row.pers{background:#fde8ec}
+.cost-row.extra{background:#f5f5f5}
+.cost-row .cv{font-weight:700;font-size:1rem}
+.cost-row.town .cv{color:#1a3a5c}
+.cost-row.pers .cv{color:#c8102e}
+.cost-bar-wrap{margin-top:12px}
+.cost-bar-lbl{font-size:.9rem;color:#888;margin-bottom:6px}
+.cost-bar{display:flex;height:32px;border-radius:4px;overflow:hidden;font-size:.9rem;font-weight:700}
+.cb-town{background:#2471a3;display:flex;align-items:center;justify-content:center;color:#fff;flex:9}
+.cb-pers{background:#c8102e;display:flex;align-items:center;justify-content:center;color:#fff;flex:1;font-size:.88rem;line-height:1.3;text-align:center}
+.pax-note{
+  display:flex;align-items:center;gap:8px;
+  background:#f8f9fa;border-radius:5px;
+  padding:10px 14px;margin-top:10px;font-size:1rem;color:#2c3e50;
+}
+
+/* ── 行程 ── */
+.itin-hdr{font-size:1rem;font-weight:700;color:#1a3a5c;margin-bottom:10px}
+.itin-strip{display:flex;height:24px;border-radius:4px;overflow:hidden;margin-bottom:12px}
+.is{display:flex;align-items:center;justify-content:center;font-size:.9rem;color:#fff;font-weight:700}
+.itin-row{
+  display:flex;gap:10px;padding:8px 0;
+  border-bottom:1px dotted #e5e5e5;align-items:flex-start;
+}
+.itin-row:last-child{border-bottom:none}
+.ir-d{
+  background:#1a3a5c;color:#fff;font-size:.9rem;font-weight:700;
+  padding:3px 0;border-radius:3px;white-space:nowrap;flex-shrink:0;
+  width:60px;text-align:center;
+}
+.ir-date{font-size:.9rem;color:#888;flex-shrink:0;width:60px;padding-top:2px;white-space:nowrap}
+.ir-desc{font-size:1rem;color:#2c3e50;line-height:1.5}
+.ir-desc strong{color:#1a3a5c}
+.ir-desc.jasper{color:#1a8a45;font-weight:500}
+
+/* ── 引用 ── */
+.quote{
+  background:#f0f5fa;
+  border-left:4px solid #c8102e;
+  border-radius:0 6px 6px 0;
+  padding:16px 20px;
+}
+.q-lbl{font-size:1rem;font-weight:700;color:#1a3a5c;margin-bottom:8px}
+.q-text{font-size:1rem;line-height:1.9;color:#2c3e50;font-style:italic}
+.q-src{text-align:right;font-size:.88rem;color:#7f8c8d;margin-top:8px}
+
+/* ══════════ PAGE 3：参考資料 ══════════ */
+.ref-header{
+  background:linear-gradient(135deg,#1a4a5c 0%,#2c5364 60%,#0f2a3a 100%);
+  color:#fff;border-radius:6px;padding:16px 24px;margin-bottom:20px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.ref-header h2{font-size:1.15rem;font-weight:900;line-height:1.3}
+.ref-header .sub{font-size:.9rem;opacity:.85;margin-top:4px}
+.ref-badge{
+  background:rgba(255,255,255,.15);border-radius:5px;
+  padding:8px 16px;font-size:.9rem;text-align:center;
+  white-space:nowrap;flex-shrink:0;margin-left:16px;
+}
+.ref-badge strong{display:block;font-size:1rem;color:#f5c842;margin-bottom:2px}
+
+/* 学校体系図 */
+.sys-wrap{margin-bottom:20px}
+.sys-flow{display:flex;gap:0;border-radius:6px;overflow:hidden;border:1.5px solid #dde3ee;margin-bottom:8px}
+.sys-block{flex:1;display:flex;flex-direction:column}
+.sys-head{
+  padding:10px 12px;color:#fff;text-align:center;
+  font-size:.9rem;font-weight:700;line-height:1.3;
+}
+.sys-body{
+  flex:1;padding:10px 12px;font-size:.9rem;line-height:1.6;color:#2c3e50;
+  background:#f9f9fb;
+}
+.sys-body .stage-age{font-size:.9rem;color:#888;margin-bottom:4px}
+.sys-body .stage-kw{font-weight:700;font-size:.9rem;margin-bottom:6px;padding-bottom:4px;border-bottom:1.5px solid}
+.sys-body li{margin-left:12px;margin-bottom:2px}
+.sys-arr{
+  display:flex;align-items:center;justify-content:center;
+  width:20px;flex-shrink:0;background:#e8edf2;
+  color:#2c5364;font-size:1rem;font-weight:900;
+}
+.sys-en .sys-head{background:#1a8a45}
+.sys-el .sys-head{background:#2471a3}
+.sys-jh .sys-head{background:#c67c0e}
+.sys-hs .sys-head{background:#c8102e}
+.sys-en .sys-body .stage-kw{color:#1a8a45;border-color:#1a8a45}
+.sys-el .sys-body .stage-kw{color:#2471a3;border-color:#2471a3}
+.sys-jh .sys-body .stage-kw{color:#c67c0e;border-color:#c67c0e}
+.sys-hs .sys-body .stage-kw{color:#c8102e;border-color:#c8102e}
+
+.sys-pillars{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px;
+}
+.sys-pillar{border-radius:5px;overflow:hidden}
+.sp-head{
+  padding:8px 12px;color:#fff;font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px;
+}
+.sp-body{
+  padding:8px 12px;background:#f5f5f8;font-size:.9rem;color:#2c3e50;line-height:1.6;
+}
+.sp-body li{margin-left:12px}
+
+/* 2カラム中段 */
+.ref-mid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+
+/* 沿革テーブル */
+.hist-wrap{}
+.hist-lbl{font-size:1.05rem;font-weight:700;color:#1a4a5c;border-left:3px solid #2c5364;padding-left:10px;margin-bottom:8px}
+.hist-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.hist-table td{padding:6px 10px;border-bottom:1px solid #eee;line-height:1.5;vertical-align:top}
+.hist-table td:first-child{
+  white-space:nowrap;font-weight:700;color:#1a4a5c;width:40px;
+}
+.hist-table .ht-mark td{background:#e8f0f5}
+.hist-table .ht-crisis td{background:#fff0f0}
+.hist-table .ht-award td{background:#fefce8}
+
+/* 実績データ */
+.result-wrap{}
+.result-lbl{font-size:1.05rem;font-weight:700;color:#1a4a5c;border-left:3px solid #2c5364;padding-left:10px;margin-bottom:8px}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.rg-box{
+  background:#1a4a5c;color:#fff;border-radius:5px;
+  padding:12px 10px;text-align:center;
+}
+.rg-box .n{font-size:1.4rem;font-weight:900;color:#f5c842;line-height:1.1}
+.rg-box .u{font-size:.9rem;opacity:.8}
+.rg-box .l{font-size:.9rem;opacity:.85;margin-top:2px;line-height:1.3}
+.rg-trend{
+  background:#f0f8ff;border:1px solid #cce0f0;border-radius:5px;
+  padding:10px 12px;font-size:.9rem;color:#1a3a5c;line-height:1.6;
+}
+.rg-trend strong{color:#c8102e}
+
+/* 入学者数グラフ（小型） */
+.hs-chart-wrap{margin-bottom:20px}
+.hs-chart-lbl{font-size:1.05rem;font-weight:700;color:#1a4a5c;border-left:3px solid #2c5364;padding-left:10px;margin-bottom:8px}
+.hs-chart-note{font-size:.9rem;color:#888;margin-top:6px}
+
+/* 制度指定バナー */
+.awards-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px;
+}
+.award-box{border-radius:5px;overflow:hidden;text-align:left}
+.aw-head{padding:8px;color:#fff;font-size:.9rem;font-weight:700;line-height:1.3}
+.aw-body{padding:8px;background:#f5f5f8;font-size:.9rem;color:#2c3e50;line-height:1.5}
+
+/* ══════════ PAGE 4：年表 ══════════ */
+.yt-pg-header{
+  background:linear-gradient(135deg,#1a4a5c 0%,#2c5364 60%,#0f2a3a 100%);
+  color:#fff;border-radius:6px;padding:14px 24px;margin-bottom:16px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.yt-pg-header h2{font-size:1.05rem;font-weight:900;line-height:1.3}
+.yt-pg-header .sub{font-size:.9rem;opacity:.85;margin-top:2px}
+.yt-pg-badge{
+  background:rgba(255,255,255,.15);border-radius:5px;
+  padding:6px 14px;font-size:.9rem;text-align:center;
+  white-space:nowrap;flex-shrink:0;margin-left:16px;
+}
+.yt-pg-badge strong{display:block;font-size:1rem;color:#f5c842;margin-bottom:1px}
+
+.yt-legend{
+  display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;
+  font-size:.9rem;color:#555;align-items:center;
+}
+.yt-leg-item{display:flex;align-items:center;gap:6px}
+.yt-leg-box{width:12px;height:12px;border-radius:2px;flex-shrink:0}
+
+/* 年表テーブル：横スクロール対応 */
+.yt-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.yt-table{
+  width:100%;border-collapse:collapse;font-size:.9rem;
+  table-layout:fixed;min-width:600px;
+}
+.yt-table colgroup col:nth-child(1){width:60px}
+.yt-table colgroup col:nth-child(2){width:24%}
+.yt-table colgroup col:nth-child(3){width:21%}
+.yt-table colgroup col:nth-child(4){width:auto}
+.yt-table colgroup col:nth-child(5){width:52px}
+.yt-table thead th{
+  background:#1a4a5c;color:#fff;
+  padding:8px;font-size:.9rem;font-weight:700;
+  text-align:left;line-height:1.3;border-bottom:2px solid #0f2a3a;
+}
+.yt-table thead th:last-child{text-align:center}
+.yt-table td{
+  padding:6px 8px;border-bottom:1px solid #eee;
+  vertical-align:top;line-height:1.45;color:#1a2a3a;
+  word-break:break-all;
+}
+.yt-yr{font-weight:700;font-size:.9rem;color:#1a4a5c;white-space:nowrap}
+.yt-era{font-size:.72rem;color:#888;white-space:nowrap}
+.yt-num{text-align:center;font-weight:700;font-size:.9rem;color:#1a4a5c}
+.yt-em{font-weight:700}
+.yt-dash{color:#ccc;text-align:center}
+
+/* Row backgrounds */
+.yt-even{background:#f9fafb}
+.yt-crisis{background:#fff0f0}
+.yt-recover{background:#edfbf2}
+.yt-mext{background:#fffde8}
+.yt-award{background:#fef9e0}
+.yt-covid{background:#fdf0f0}
+
+/* ── Q&A ── */
+.qa-intro{background:#f0f5fa;border-left:4px solid #1a3a5c;border-radius:0 6px 6px 0;padding:16px 20px;font-size:1rem;color:#2c3e50;line-height:1.7;margin-bottom:24px}
+.qa-section{margin-bottom:24px}
+.qa-section-title{font-size:1rem;font-weight:700;color:#1a3a5c;border-bottom:2px solid #1a3a5c;padding-bottom:6px;margin-bottom:12px}
+.qa-item{margin-bottom:16px}
+.qa-q{font-size:1rem;font-weight:700;color:#1d1d1f;line-height:1.65;margin-bottom:6px;padding-left:16px;border-left:3px solid #c8102e}
+.qa-q::before{content:"Q　"}
+.qa-a{font-size:1rem;color:#c8102e;line-height:1.75;padding-left:32px;font-weight:500}
+.qa-a::before{content:"▶　"}
+.qa-no-ans{font-size:.9rem;color:#aaa;padding-left:32px;font-style:italic}
+
+/* ════════════════════════════════
+   レスポンシブ：タブレット以下 (768px)
+   ════════════════════════════════ */
+@media(max-width:768px){
+  .page{margin:0 0 6px 0;padding:24px 16px}
+
+  /* ヘッダー系 */
+  .page-header{flex-direction:column;align-items:flex-start;gap:10px}
+  .ph-badge{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,.3);padding-top:10px;margin-left:0;width:100%;text-align:left}
+
+  .p2-head{flex-direction:column;align-items:flex-start;gap:10px}
+  .p2-head .right{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,.3);padding-top:8px;margin-left:0;white-space:normal;width:100%}
+
+  .ref-header{flex-direction:column;align-items:flex-start;gap:10px}
+  .ref-badge{margin-left:0}
+
+  .yt-pg-header{flex-direction:column;align-items:flex-start;gap:10px}
+  .yt-pg-badge{margin-left:0}
+
+  /* 姉妹提携 */
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+
+  /* 3文脈 */
+  .ctx-flow{flex-direction:column;gap:10px}
+  .ctx-arrow{display:none}
+
+  /* ロードマップ */
+  .rm-track{flex-direction:column}
+  .rs{border-right:none;border-bottom:1px dashed #dde3ee}
+  .rs:last-child{border-bottom:none}
+
+  /* アンケート */
+  .survey-inner{grid-template-columns:1fr}
+  .sv-left{flex-direction:row;gap:16px;justify-content:flex-start;min-width:0}
+  .sv-bar-lbl{width:100px}
+
+  /* 2カラム */
+  .two-col{grid-template-columns:1fr}
+
+  /* 費用 */
+  .cost-total{flex-direction:column;align-items:flex-start;gap:8px}
+  .ct-r{text-align:left}
+
+  /* 体系図 */
+  .sys-pillars{grid-template-columns:1fr}
+
+  /* 参考資料中段 */
+  .ref-mid{grid-template-columns:1fr}
+
+  /* バナー */
+  .awards-strip{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ════════════════════════════════
+   スマートフォン (480px)
+   ════════════════════════════════ */
+@media(max-width:480px){
+  .ph-main h1{font-size:1.2rem}
+  .p2-head h2{font-size:1.05rem}
+  .connect{font-size:1.3rem}
+  .since-tag{font-size:.88rem}
+  .sstat .n{font-size:1.3rem}
+  .sv-bar-lbl{width:80px;font-size:.88rem}
+  .chart-top{flex-direction:column}
+  .sister-bar{gap:8px}
+  .ctx-num{font-size:1.2rem}
+  .awards-strip{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ PAGE 1 ═══════════════ -->
+<div class="page">
+
+  <div class="page-header">
+    <div class="ph-main">
+      <h1>鹿追町の国際交流と幼小中高一貫教育</h1>
+      <div class="sub">カナダ・アルバータ州ストニィプレイン町との姉妹提携が育んだ「使える英語」13年プログラム</div>
+    </div>
+    <div class="ph-badge">
+      <strong>鹿追町教育委員会</strong>
+      北海道鹿追町
+    </div>
+  </div>
+
+  <!-- 姉妹提携 -->
+  <div class="sister">
+    <div class="sec-lbl">姉妹都市提携 ─ Sister Town Partnership</div>
+    <div class="sister-bar">
+      <div class="flag">🇯🇵</div>
+      <div>
+        <div class="town-name">鹿追町</div>
+        <div class="town-sub">北海道十勝 ／ 人口約4,700人</div>
+      </div>
+      <div class="connect">⇄</div>
+      <div style="text-align:right">
+        <div class="town-name">Stony Plain</div>
+        <div class="town-sub">カナダ・アルバータ州 ／ 人口約18,000人</div>
+      </div>
+      <div class="flag">🇨🇦</div>
+      <div class="since-tag">1985年8月26日<br>姉妹提携締結<br><span style="font-size:.9rem;opacity:.85">ホームステイ形式で交流</span></div>
+    </div>
+    <div class="stats-row">
+      <div class="sstat">
+        <div class="n">40<span style="font-size:.9rem">年以上</span></div>
+        <div class="l">交流の歴史</div>
+      </div>
+      <div class="sstat">
+        <div class="n">2,859</div><div class="u">人</div>
+        <div class="l">累計相互交流人数</div>
+      </div>
+      <div class="sstat">
+        <div class="n">2,412</div><div class="u">人</div>
+        <div class="l">日本→カナダ 派遣</div>
+      </div>
+      <div class="sstat">
+        <div class="n">447</div><div class="u">人</div>
+        <div class="l">カナダ→日本 受入</div>
+      </div>
+    </div>
+    <div class="award-note">
+      <span class="icon">🏆</span>
+      <span>
+        <strong>2010年 総務大臣賞受賞</strong>
+        ─ 第4回姉妹自治体交流表彰にて最高賞。全国に誇る先進的な国際交流が評価された。
+        2025年には<strong>姉妹提携40周年</strong>を記念し、相互に友好訪問団を派遣・受入。
+      </span>
+    </div>
+  </div>
+
+  <!-- 3文脈 -->
+  <div class="contexts">
+    <div class="sec-lbl">一貫教育が生まれた経緯 ─ 3つの文脈</div>
+    <div class="ctx-flow">
+      <div class="ctx-card ctx-a">
+        <div class="ctx-head">
+          <div class="ctx-num">①</div>
+          <div class="ctx-ht">
+            <div class="ctx-title">国際交流の積極的推進</div>
+            <div class="ctx-period">1985年〜</div>
+          </div>
+        </div>
+        <div class="ctx-body">
+          <ul>
+            <li>1985年 カナダ・ストニィプレイン町と姉妹提携</li>
+            <li>1986年〜 全交流をホームステイ形式で実施</li>
+            <li>1987年〜 中高生短期交換留学制度を開始</li>
+            <li>1991年 <strong>独自のAET制度を設置し英語教育開始</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ctx-arrow">▶</div>
+      <div class="ctx-card ctx-b">
+        <div class="ctx-head">
+          <div class="ctx-num">②</div>
+          <div class="ctx-ht">
+            <div class="ctx-title">鹿追高校の存続危機と改革</div>
+            <div class="ctx-period">1989年〜1997年</div>
+          </div>
+        </div>
+        <div class="ctx-body">
+          <ul>
+            <li>1989年 道立高校適正配置で一間口減が示される</li>
+            <li>1990年 高校存続を目的に「鹿追高校協力会」設置</li>
+            <li>1995年 <strong>H8年4月41人以上入学なければ廃校の危機</strong></li>
+            <li>子どもが誇りを持てる学校づくりに着手しました</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ctx-arrow">▶</div>
+      <div class="ctx-card ctx-c">
+        <div class="ctx-head">
+          <div class="ctx-num">③</div>
+          <div class="ctx-ht">
+            <div class="ctx-title">英語教育を核とした一貫教育の確立</div>
+            <div class="ctx-period">1996年〜現在</div>
+          </div>
+        </div>
+        <div class="ctx-body">
+          <ul>
+            <li>1996年 AETを2人体制。<strong>保育園〜高校まで英語教育開始</strong></li>
+            <li>1997年 <strong>高校1年生全員がカナダへ短期留学</strong>（全国初）</li>
+            <li>2003年 文科省「研究開発学校」指定。「カナダ学」研究開始</li>
+            <li>2018年 一貫型コミュニティースクールを導入し現在に至る</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ロードマップ -->
+  <div class="roadmap">
+    <div class="sec-lbl">英語教育13年ロードマップ ─ こども園から高校まで</div>
+    <div class="rm-track">
+      <div class="rs rs-en">
+        <div class="rs-school">🌱 認定こども園</div>
+        <div class="rs-age">5歳（年長）〜</div>
+        <div class="rs-kw">英語に出会う</div>
+        <div class="rs-desc">歌や遊びを通じて英語の音やリズムに親しむ。英語を「楽しいもの」として感じるファーストステップ。</div>
+        <span class="rs-tag">英語への親しみ</span>
+      </div>
+      <div class="rs rs-el">
+        <div class="rs-school">📚 小学校</div>
+        <div class="rs-age">6〜12歳（1〜6年）</div>
+        <div class="rs-kw">英語で学ぶ</div>
+        <div class="rs-desc">教育課程特例校の指定を受けイマージョン教育を実施。英語を使いながら教科を学び、自然な英語習得を目指す。</div>
+        <span class="rs-tag">イマージョン教育</span>
+      </div>
+      <div class="rs rs-jh">
+        <div class="rs-school">💬 中学校</div>
+        <div class="rs-age">13〜15歳（1〜3年）</div>
+        <div class="rs-kw">考えを伝える</div>
+        <div class="rs-desc">外国語科での英語学習。自分の考えを英語で相手に届ける力を段階的に養う。</div>
+        <span class="rs-tag">外国語科（英語）</span>
+      </div>
+      <div class="rs rs-hs">
+        <div class="rs-school">✈️ 鹿追高校</div>
+        <div class="rs-age">16〜18歳（1〜3年）</div>
+        <div class="rs-kw">カナダの家族と暮らす</div>
+        <div class="rs-desc"><strong>1年生全員</strong>がストニィプレイン町へ短期留学。ホストファミリーと生活し「使える英語」を実践する。</div>
+        <span class="rs-tag">全員参加 短期留学</span>
+      </div>
+    </div>
+    <div class="rm-concept">
+      <div class="rc-title">🌍 13年間の一貫プログラム ─ 共通のコンセプト</div>
+      5歳で英語に出会い、小学校でイマージョン教育を受け、中学校で考えを伝え、高校でカナダの家族と暮らす。
+      本町の英語教育は、こども園から高校まで13年間をかけて「使える英語」を育てる一貫プログラムです。
+      こども園から積み重ねてきた英語力が、高校でのカナダ留学という実践の場で発揮されます。
+    </div>
+  </div>
+
+</div><!-- /PAGE 1 -->
+
+<!-- ═══════════════ PAGE 2 ═══════════════ -->
+<div class="page">
+
+  <div class="p2-head">
+    <div>
+      <h2>高校生カナダ短期留学 ─ 実績・費用・行程</h2>
+      <div class="sub">1997年開始。全国でも類を見ない高校1年生全員参加による短期留学事業</div>
+    </div>
+    <div class="right">鹿追高校生カナダ短期留学派遣事業<br>ストニィプレイン町ホームステイ留学</div>
+  </div>
+
+  <!-- アンケート -->
+  <div class="survey-sec">
+    <div class="sec-lbl">入学理由アンケート ─ 英語教育が第1位（227名回答・2022〜2025年度入学生）</div>
+    <div class="survey-inner">
+      <div class="sv-left">
+        <div class="sv-pct">68.7%</div>
+        <div class="sv-pct-lbl">英語教育を選択</div>
+        <div class="sv-rank">227名中156名・第1位</div>
+      </div>
+      <div class="sv-right">
+        <div class="sv-bars">
+          <div class="sv-bar-item">
+            <div class="sv-bar-lbl"><strong>英語教育・カナダ留学</strong></div>
+            <div class="sv-bar-track"><div class="sv-bar-fill" style="width:68.7%;background:#c8102e">156名</div></div>
+            <div class="sv-bar-pct"><strong>68.7%</strong></div>
+          </div>
+          <div class="sv-bar-item">
+            <div class="sv-bar-lbl">探究学習</div>
+            <div class="sv-bar-track"><div class="sv-bar-fill" style="width:22.0%;background:#2471a3">50名</div></div>
+            <div class="sv-bar-pct">22.0%</div>
+          </div>
+          <div class="sv-bar-item">
+            <div class="sv-bar-lbl">なんとなく</div>
+            <div class="sv-bar-track"><div class="sv-bar-fill" style="width:21.6%;background:#95a5a6">49名</div></div>
+            <div class="sv-bar-pct">21.6%</div>
+          </div>
+          <div class="sv-bar-item">
+            <div class="sv-bar-lbl">学生寮に住める</div>
+            <div class="sv-bar-track"><div class="sv-bar-fill" style="width:17.2%;background:#7f8c8d">39名</div></div>
+            <div class="sv-bar-pct">17.2%</div>
+          </div>
+          <div class="sv-bar-item">
+            <div class="sv-bar-lbl">経済的バックアップ</div>
+            <div class="sv-bar-track"><div class="sv-bar-fill" style="width:15.0%;background:#7f8c8d">34名</div></div>
+            <div class="sv-bar-pct">15.0%</div>
+          </div>
+        </div>
+        <div class="sv-bottom">
+          <div class="sv-tag">🏫 町外生徒の英語教育選択率：77.9%（109/140名）</div>
+          <div class="sv-note">2位「探究学習」との差は<strong>46.7ポイント</strong>。特に町外生徒の77.9%が英語教育を動機に挙げており、英語教育が全国から生徒が集まる本校の最大の特色となっています。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- グラフ -->
+  <div class="chart-wrap">
+    <div class="chart-top">
+      <div>
+        <h3>鹿追高校生 カナダ短期留学 年間派遣人数（1996〜2025年）</h3>
+        <div class="note">※1月〜3月実施分は前年度に計上。2020・2021年度はCOVID-19により中止。2026年度76名。</div>
+      </div>
+      <div class="legend">
+        <div class="leg"><div class="leg-dot" style="background:#2471a3"></div>通常実施</div>
+        <div class="leg"><div class="leg-dot" style="background:#bdc3c7"></div>COVID中止</div>
+        <div class="leg"><div class="leg-dot" style="background:#27ae60"></div>再開後</div>
+      </div>
+    </div>
+    <svg id="chart" width="100%" viewBox="0 0 790 195" preserveAspectRatio="none" style="display:block;width:100%;height:auto" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+
+  <!-- 2カラム -->
+  <div class="two-col">
+
+    <!-- 費用 -->
+    <div>
+      <div class="sec-lbl">費用内訳（2026年度）</div>
+      <div class="cost-total">
+        <div class="ct-l">
+          <div class="lbl">1人あたり費用</div>
+          <div class="val">40<span class="unit">万円</span></div>
+          <div style="font-size:.9rem;opacity:.7;margin-top:2px">参加87名（生徒78名＋教員9名）</div>
+        </div>
+        <div class="ct-r">
+          <div class="lbl">事業総費用（概算）</div>
+          <div class="val">3,780万円</div>
+          <div class="note">諸費用300万円を含む</div>
+        </div>
+      </div>
+      <div class="cost-row pers">
+        <span>🎓 生徒個人負担（1割）</span>
+        <span class="cv">4万円<span style="font-size:.88rem;font-weight:400"> /人</span></span>
+      </div>
+      <div class="cost-row town">
+        <span>🏛 町費負担（生徒分・9割）</span>
+        <span class="cv">36万円<span style="font-size:.88rem;font-weight:400"> /人</span></span>
+      </div>
+      <div class="cost-row town">
+        <span>🏛 町費負担（教員分・全額）</span>
+        <span class="cv">40万円<span style="font-size:.88rem;font-weight:400"> /人</span></span>
+      </div>
+      <div class="cost-row extra">
+        <span>＋ 諸費用（別途）</span>
+        <span class="cv" style="color:#555">300万円</span>
+      </div>
+      <div class="cost-bar-wrap">
+        <div class="cost-bar-lbl">1人あたり費用の内訳</div>
+        <div class="cost-bar">
+          <div class="cb-town">町費 90%（36万円）</div>
+          <div class="cb-pers">生徒<br>10%</div>
+        </div>
+      </div>
+      <div class="pax-note">
+        <span style="font-size:1.1rem">👥</span>
+        <span>参加87名（生徒78名＋引率教員9名）。引率教員分は全額町費で負担しています。</span>
+      </div>
+    </div>
+
+    <!-- 行程 -->
+    <div>
+      <div class="sec-lbl">2026年度 行程概要（15日間）</div>
+      <div class="itin-hdr">10月2日（金）出発 ─ 10月16日（金）帰着</div>
+      <div class="itin-row">
+        <span class="ir-d">Day1</span>
+        <span class="ir-date">10/2(金)</span>
+        <span class="ir-desc">鹿追→帯広→羽田→成田出発→カルガリー着</span>
+      </div>
+      <div class="itin-row">
+        <span class="ir-d">Day2</span>
+        <span class="ir-date">10/3(土)</span>
+        <span class="ir-desc"><strong>ストニィプレイン着。受入式→ホームステイ開始</strong></span>
+      </div>
+      <div class="itin-row">
+        <span class="ir-d">Day3-6</span>
+        <span class="ir-date">10/4-7</span>
+        <span class="ir-desc">K9学校訪問（日本文化紹介）・壁画ツアー・メモリアルコンポジット高校体験授業・ホストファミリー夕食会</span>
+      </div>
+      <div class="itin-row">
+        <span class="ir-d">Day7-8</span>
+        <span class="ir-date">10/8-9</span>
+        <span class="ir-desc jasper"><strong>★ジャスパー1泊2日小旅行</strong>　アサバスカの滝・マリーン渓谷・ピラミッド湖</span>
+      </div>
+      <div class="itin-row">
+        <span class="ir-d">Day9-11</span>
+        <span class="ir-date">10/10-12</span>
+        <span class="ir-desc">終日ホストファミリーとの交流（ホームステイ継続）</span>
+      </div>
+      <div class="itin-row">
+        <span class="ir-d">Day12</span>
+        <span class="ir-date">10/13(火)</span>
+        <span class="ir-desc">さよなら食事会→アルバータ大学見学→ウェストエドモントンモール</span>
+      </div>
+      <div class="itin-row">
+        <span class="ir-d">Day13-15</span>
+        <span class="ir-date">10/14-16</span>
+        <span class="ir-desc">帰国→成田泊→羽田→帯広→<strong>鹿追着（10/16 14:30）</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 引用 -->
+  <div class="quote">
+    <div class="q-lbl">町長メッセージより ─ 鹿追町がこの事業にかける思い</div>
+    <p class="q-text">
+      全国でも類を見ない鹿追高校生１年生の全員参加による短期留学です……やはりその土地に足を踏み入れて生活を共にし、習慣や文化の違う人たちに触れる空気感は、何事にも変え難い貴重な経験です……お互いに違う文化や習慣を理解し、受け入れ、多様性を学び、それを受け入れる柔軟な発想で国際的な平和を考えることのできる人に育ってほしいと心から願ってやみません。
+    </p>
+    <div class="q-src">─ 鹿追町長メッセージ（カナダ短期留学派遣事業しおりより）</div>
+  </div>
+
+</div><!-- /PAGE 2 -->
+
+<script>
+(function(){
+  const years=['1996','1997','1998','1999','2000','2001','2002','2003','2004','2005',
+               '2006','2007','2008','2009','2010','2011','2012','2013','2014','2015',
+               '2016','2017','2018','2019','2020','2021','2022','2023','2024','2025','2026'];
+  const vals=[73,67,64,61,58,60,70,59,65,70,57,63,72,66,62,57,63,72,75,71,79,60,55,60,0,0,46,44,49,70,76];
+  const svg=document.getElementById('chart');
+  const ns='http://www.w3.org/2000/svg';
+  const W=790,H=195,ML=42,MB=40,MT=15,MR=12;
+  const CW=W-ML-MR,CH=H-MT-MB;
+  const n=vals.length,slotW=CW/n,barW=Math.min(18,slotW-3),yMax=145;
+  function el(t,a){const e=document.createElementNS(ns,t);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);return e}
+  function tx(s,a){const e=el('text',a);e.textContent=s;return e}
+  const cx=ML+24*slotW;
+  svg.appendChild(el('rect',{x:cx,y:MT,width:slotW*2,height:CH,fill:'#ffe8e8',opacity:.6}));
+  svg.appendChild(tx('COVID-19中止',{x:cx+slotW,y:MT+11,'text-anchor':'middle','font-size':'8.5','fill':'#c8102e','font-weight':'700'}));
+  [0,25,50,75,100,125].forEach(v=>{
+    const y=MT+CH-v*(CH/yMax);
+    svg.appendChild(el('line',{x1:ML,y1:y,x2:W-MR,y2:y,stroke:v===0?'#999':'#e0e4ee','stroke-width':v===0?1:.6}));
+    if(v>0)svg.appendChild(tx(v+'人',{x:ML-3,y:y+3.5,'text-anchor':'end','font-size':'8','fill':'#7f8c8d'}));
+  });
+  vals.forEach((v,i)=>{
+    const bx=ML+i*slotW+(slotW-barW)/2;
+    let fill='#2471a3';
+    if(years[i]==='2020'||years[i]==='2021')fill='#bdc3c7';
+    else if(parseInt(years[i])>=2022)fill='#27ae60';
+    if(v>0){
+      const bh=v*(CH/yMax),by=MT+CH-bh;
+      svg.appendChild(el('rect',{x:bx,y:by,width:barW,height:bh,fill,rx:'1.5'}));
+      if(v>=30)svg.appendChild(tx(v,{x:bx+barW/2,y:by-2.5,'text-anchor':'middle','font-size':'7','fill':'#1a2a3a','font-weight':'500'}));
+    }else if(v===0&&(years[i]==='2020'||years[i]==='2021')){
+      svg.appendChild(tx('×',{x:bx+barW/2,y:MT+CH-2,'text-anchor':'middle','font-size':'9','fill':'#c8102e','font-weight':'700'}));
+    }
+    const yr=parseInt(years[i]);
+    if(yr%5===0||yr===1996||yr===2026){
+      const lx=bx+barW/2;
+      svg.appendChild(tx(years[i],{x:lx,y:H-3,'text-anchor':'end','font-size':'8','fill':'#5d6d7e',transform:`rotate(-45,${lx},${H-3})`}));
+    }
+  });
+  svg.appendChild(el('line',{x1:ML,y1:MT,x2:ML,y2:MT+CH,stroke:'#bbb','stroke-width':1}));
+  svg.appendChild(el('line',{x1:ML,y1:MT+CH,x2:W-MR,y2:MT+CH,stroke:'#bbb','stroke-width':1}));
+})();
+</script>
+
+<!-- ═══════════════ PAGE 3：参考資料 ═══════════════ -->
+<div class="page">
+
+  <div class="ref-header">
+    <div>
+      <h2>鹿追町の幼小中高一貫教育</h2>
+      <div class="sub">国際交流を核に、こども園から高校まで一貫して「使える英語と探究する力」を育む13年間の教育プログラム</div>
+    </div>
+    <div class="ref-badge">
+      <strong>参考資料</strong>
+      鹿追町教育委員会
+    </div>
+  </div>
+
+  <!-- 学校体系図 -->
+  <div class="sys-wrap">
+    <div class="sec-lbl" style="border-color:#2c5364;color:#1a4a5c">一貫教育の体系 ─ 13年間の学びの連続性</div>
+    <div class="sys-pillars">
+      <div class="sys-pillar">
+        <div class="sp-head" style="background:#1a8a45">🗣 英語教育</div>
+        <div class="sp-body">
+          <ul>
+            <li>こども園〜高校まで13年間の一貫英語教育</li>
+            <li>小学校：イマージョン教育（教育課程特例校）</li>
+            <li>高1全員カナダ短期留学（15日間・ホームステイ）</li>
+            <li>AETを複数名常時配置</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sys-pillar">
+        <div class="sp-head" style="background:#c67c0e">🔍 探究教育</div>
+        <div class="sp-body">
+          <ul>
+            <li>中学校での国際バカロレア（IB）プログラムへの取り組み</li>
+            <li>自分のテーマで地域課題に挑む</li>
+            <li>小中高を通じた探究の積み上げ</li>
+            <li>全国高校生フォーラム等で発表</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sys-pillar">
+        <div class="sp-head" style="background:#2e7d32">🌍 環境教育</div>
+        <div class="sp-body">
+          <ul>
+            <li>とかち鹿追ジオパークを中心とした教育メニュー</li>
+            <li>日本ジオパーク認定（2013年）に基づくフィールド学習</li>
+            <li>ESD（持続可能な開発のための教育）との連携</li>
+            <li>地域の自然・地質・文化を教材とした体験学習</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 中段：沿革 + 実績 -->
+  <div class="ref-mid">
+
+    <!-- 主な沿革 -->
+    <div class="hist-wrap">
+      <div class="hist-lbl">主な沿革</div>
+      <table class="hist-table">
+        <tr><td>1985</td><td>カナダ・ストニィプレイン町と姉妹提携締結</td></tr>
+        <tr><td>1991</td><td>独自AET制度を設置・鹿追高校で英語教育開始</td></tr>
+        <tr class="ht-crisis"><td>1995</td><td>鹿追高校入学者<strong>45名</strong>で存続の危機に直面</td></tr>
+        <tr class="ht-mark"><td>1996</td><td>AET2人体制。こども園〜高校まで<strong>全校英語教育開始</strong></td></tr>
+        <tr class="ht-mark"><td>1997</td><td>高校1年生全員カナダ短期留学を開始（<strong>全国初</strong>）</td></tr>
+        <tr><td>2002</td><td>文科省「連携型中高一貫教育推進校」指定・新校舎完成</td></tr>
+        <tr><td>2003</td><td>文科省「研究開発学校」指定・「カナダ学」研究開始</td></tr>
+        <tr class="ht-award"><td>2010</td><td>総務大臣賞受賞（第4回姉妹自治体交流表彰）</td></tr>
+        <tr><td>2013</td><td>日本ジオパーク認定・ESD教育へ展開</td></tr>
+        <tr><td>2018</td><td>一貫型コミュニティースクール導入</td></tr>
+        <tr><td>2019</td><td>探究学習「鹿追創生アカデミアプロジェクト」開始</td></tr>
+        <tr class="ht-mark"><td>2022</td><td>全国からの入学者募集を開始</td></tr>
+        <tr class="ht-mark"><td>2024</td><td>入学者<strong>75名</strong>（うち道外・町外生徒が大半）</td></tr>
+        <tr class="ht-mark"><td>2025</td><td>姉妹提携<strong>40周年</strong>。入学者<strong>79名</strong>（町内29名・町外50名）。留学生・友好訪問団受入</td></tr>
+        <tr><td>2026</td><td>入学者<strong>45名</strong>（町内20名・町外25名）。留学生・友好訪問団受入</td></tr>
+      </table>
+    </div>
+
+    <!-- 実績データ -->
+    <div class="result-wrap">
+      <div class="result-lbl">一貫教育の成果</div>
+      <div class="result-grid">
+        <div class="rg-box">
+          <div class="n">79</div><div class="u">名</div>
+          <div class="l">2025年度入学者数<br>（町内29名・町外50名）</div>
+        </div>
+        <div class="rg-box">
+          <div class="n">77.9</div><div class="u">%</div>
+          <div class="l">アンケート回答者<br>町外生徒の割合</div>
+        </div>
+        <div class="rg-box">
+          <div class="n">68.7</div><div class="u">%</div>
+          <div class="l">英語教育が入学<br>動機1位（227名調査）</div>
+        </div>
+        <div class="rg-box">
+          <div class="n">10</div><div class="u">名</div>
+          <div class="l">国公立大合格者数<br>（ピーク時2018年）</div>
+        </div>
+      </div>
+      <div class="rg-trend">
+        1995年に<strong>45名まで落ち込んだ</strong>入学者数は、英語一貫教育の開始（1996年）と全員参加カナダ留学（1997年〜）を機に回復。2022年の全国募集開始後は<strong>全国から生徒が集まる学校</strong>として再び成長しています。
+      </div>
+
+      <div class="awards-strip" style="margin-top:12px">
+        <div class="award-box">
+          <div class="aw-head" style="background:#1a4a5c">文部科学省<br>研究開発学校</div>
+          <div class="aw-body">2003〜2018年<br>5期にわたり指定</div>
+        </div>
+        <div class="award-box">
+          <div class="aw-head" style="background:#1a4a5c">連携型<br>中高一貫推進校</div>
+          <div class="aw-body">2002年<br>文部科学省指定</div>
+        </div>
+        <div class="award-box">
+          <div class="aw-head" style="background:#b8860b">総務大臣賞</div>
+          <div class="aw-body">2010年<br>姉妹自治体交流表彰</div>
+        </div>
+        <div class="award-box">
+          <div class="aw-head" style="background:#2e7d32">日本ジオパーク</div>
+          <div class="aw-body">2013年認定<br>ESD教育へ展開</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 鹿追高校入学者数の推移 -->
+  <div class="hs-chart-wrap">
+    <div class="hs-chart-lbl">鹿追高校 入学者数の推移（1985〜2026年）</div>
+    <svg id="hs-chart" width="100%" viewBox="0 0 790 130" style="display:block"></svg>
+    <div class="hs-chart-note">
+      ※ 1995年に45名まで落ち込み存続の危機。1996年の全校英語教育開始・1997年全員カナダ留学以降、回復基調。2020・2021年はCOVID-19の影響で大幅減。2022年全国募集開始後は増加し、2025年度は79名（町内29名・町外50名）。2026年度は45名（町内20名・町外25名）。
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  const years2=['1985','1986','1987','1988','1989','1990','1991','1992','1993','1994',
+                '1995','1996','1997','1998','1999','2000','2001','2002','2003','2004',
+                '2005','2006','2007','2008','2009','2010','2011','2012','2013','2014',
+                '2015','2016','2017','2018','2019','2020','2021','2022','2023','2024',
+                '2025','2026'];
+  const vals2=[63,83,80,79,55,51,55,61,47,59,
+               45,72,69,65,65,59,71,79,60,68,
+               75,60,68,77,67,64,58,66,72,78,
+               74,79,63,58,62,28,56,49,52,75,
+               79,45];
+  const svg=document.getElementById('hs-chart');
+  const ns='http://www.w3.org/2000/svg';
+  const W=790,H=130,ML=32,MB=28,MT=12,MR=8;
+  const CW=W-ML-MR,CH=H-MT-MB;
+  const yMax=90;
+  const n=vals2.length;
+  const slotW=CW/n,barW=Math.max(slotW*0.65,5);
+  function el(t,a){const e=document.createElementNS(ns,t);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);return e}
+  function tx(s,a){const e=el('text',a);e.textContent=s;return e}
+  const ci=4,cl=7;
+  svg.appendChild(el('rect',{x:ML+ci*slotW,y:MT,width:slotW*cl,height:CH,fill:'#fff0f0',opacity:.7}));
+  const cvi=35;
+  svg.appendChild(el('rect',{x:ML+cvi*slotW,y:MT,width:slotW*2,height:CH,fill:'#ffe8e8',opacity:.6}));
+  svg.appendChild(tx('COVID',{x:ML+(cvi+1)*slotW,y:MT+9,'text-anchor':'middle','font-size':'6.5','fill':'#c8102e','font-weight':'700'}));
+  [0,25,50,75].forEach(v=>{
+    const y=MT+CH-v*(CH/yMax);
+    svg.appendChild(el('line',{x1:ML,y1:y,x2:W-MR,y2:y,stroke:v===0?'#999':'#e0e4ee','stroke-width':v===0?1:.5}));
+    if(v>0)svg.appendChild(tx(v,{x:ML-3,y:y+3,'text-anchor':'end','font-size':'7','fill':'#7f8c8d'}));
+  });
+  vals2.forEach((v,i)=>{
+    const bx=ML+i*slotW+(slotW-barW)/2;
+    let fill='#2471a3';
+    const yr=parseInt(years2[i]);
+    if(yr<=1995)fill='#5d8aaa';
+    if(yr===1995)fill='#c8102e';
+    if(yr>=1996&&yr<=2001)fill='#27ae60';
+    if(yr>=2002&&yr<=2019)fill='#2471a3';
+    if(yr===2020||yr===2021)fill='#bdc3c7';
+    if(yr>=2022)fill='#27ae60';
+    if(v>0){
+      const bh=v*(CH/yMax),by=MT+CH-bh;
+      svg.appendChild(el('rect',{x:bx,y:by,width:barW,height:bh,fill,rx:'1.5'}));
+      if(v>=60)svg.appendChild(tx(v,{x:bx+barW/2,y:by-2,'text-anchor':'middle','font-size':'6.5','fill':'#1a2a3a','font-weight':'600'}));
+      if(yr===1995||yr===1996||yr===1997||yr===2024)svg.appendChild(tx(v,{x:bx+barW/2,y:by-2,'text-anchor':'middle','font-size':'6.5','fill':'#1a2a3a','font-weight':'700'}));
+    }else{
+      svg.appendChild(tx('×',{x:bx+barW/2,y:MT+CH-2,'text-anchor':'middle','font-size':'7','fill':'#c8102e','font-weight':'700'}));
+    }
+    if(yr%5===0||yr===1995||yr===1997||yr===2022||yr===2024){
+      const lx=bx+barW/2;
+      svg.appendChild(tx(years2[i],{x:lx,y:H-3,'text-anchor':'end','font-size':'6.5','fill':'#5d6d7e',transform:`rotate(-45,${lx},${H-3})`}));
+    }
+  });
+  svg.appendChild(el('line',{x1:ML,y1:MT,x2:ML,y2:MT+CH,stroke:'#bbb','stroke-width':1}));
+  svg.appendChild(el('line',{x1:ML,y1:MT+CH,x2:W-MR,y2:MT+CH,stroke:'#bbb','stroke-width':1}));
+  const cx95=ML+10*slotW+slotW/2;
+  svg.appendChild(el('line',{x1:cx95,y1:MT+CH-45*(CH/yMax)-2,x2:cx95,y2:MT+8,'stroke':'#c8102e','stroke-width':.8,'stroke-dasharray':'2,2'}));
+  svg.appendChild(tx('存続危機',{x:cx95+2,y:MT+7,'font-size':'6.5','fill':'#c8102e','font-weight':'700'}));
+  const cx96=ML+11*slotW+slotW/2;
+  svg.appendChild(el('line',{x1:cx96,y1:MT+CH-72*(CH/yMax)-2,x2:cx96,y2:MT+22,'stroke':'#27ae60','stroke-width':.8,'stroke-dasharray':'2,2'}));
+  svg.appendChild(tx('英語教育全校開始',{x:cx96+2,y:MT+21,'font-size':'6','fill':'#1a8a45','font-weight':'700'}));
+})();
+</script>
+
+<!-- ═══════════════ PAGE 4：全経緯 年表 ═══════════════ -->
+<div class="page">
+
+  <div class="yt-pg-header">
+    <div>
+      <h2>全経緯 年表 ─ 鹿追町の国際交流と幼小中高一貫教育（1985〜2026年）</h2>
+      <div class="sub">姉妹提携締結から40年間の歩み。国際交流と一貫教育を並行して記録。</div>
+    </div>
+    <div class="yt-pg-badge">
+      <strong>参考資料</strong>
+      鹿追町教育委員会
+    </div>
+  </div>
+
+  <div class="yt-legend">
+    凡例：
+    <div class="yt-leg-item"><div class="yt-leg-box" style="background:#ffcccc"></div>存続危機期（1989〜1995）</div>
+    <div class="yt-leg-item"><div class="yt-leg-box" style="background:#a8e6c0"></div>転換・回復期</div>
+    <div class="yt-leg-item"><div class="yt-leg-box" style="background:#fff3a0"></div>文部科学省指定</div>
+    <div class="yt-leg-item"><div class="yt-leg-box" style="background:#ffe066"></div>表彰・認定</div>
+    <div class="yt-leg-item"><div class="yt-leg-box" style="background:#f5b8b8"></div>COVID-19</div>
+  </div>
+
+  <div class="yt-table-wrap">
+  <table class="yt-table">
+    <colgroup>
+      <col style="width:60px">
+      <col style="width:24%">
+      <col style="width:21%">
+      <col>
+      <col style="width:52px">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>年</th>
+        <th>国際交流のできごと</th>
+        <th>幼小中高一貫教育のできごと</th>
+        <th>鹿追高校のできごと</th>
+        <th style="text-align:center">高校<br>入学者</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="yt-recover">
+        <td><div class="yt-yr">1985</div></td>
+        <td><span class="yt-em">カナダ・アルバータ州ストニィプレイン町と姉妹提携締結</span>（8月26日）</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">63</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">1986</div></td>
+        <td>ストニィプレイン町友好訪問団受入。<span class="yt-em">以降全ての受入・訪問はホームステイ形式で実施</span></td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">83</td>
+      </tr>
+      <tr>
+        <td><div class="yt-yr">1987</div></td>
+        <td><span class="yt-em">中高生を対象とした短期交換留学制度を開始</span>（隔年実施〜H7年まで）</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">80</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">1988</div></td>
+        <td>留学生・友好訪問団受入。第4次カナダ環境視察団に参加</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">79</td>
+      </tr>
+      <tr class="yt-crisis">
+        <td><div class="yt-yr">1989</div></td>
+        <td>留学生派遣</td>
+        <td class="yt-dash">─</td>
+        <td>道立高校適正配置原案に<span class="yt-em">鹿追高校の一間口減が示される</span></td>
+        <td class="yt-num">55</td>
+      </tr>
+      <tr class="yt-crisis">
+        <td><div class="yt-yr">1990</div></td>
+        <td>留学生・友好訪問団受入。姉妹提携5周年記念友好訪問団派遣</td>
+        <td class="yt-dash">─</td>
+        <td>前年度と同案が道教委から提示。高校存続を目的に<span class="yt-em">「鹿追高校協力会」を設置</span></td>
+        <td class="yt-num">51</td>
+      </tr>
+      <tr class="yt-crisis">
+        <td><div class="yt-yr">1991</div></td>
+        <td>留学生派遣</td>
+        <td><span class="yt-em">鹿追町独自のAET制度を設置</span></td>
+        <td>ストニィプレイン町からの派遣により<span class="yt-em">鹿追高校で英語教育を開始</span></td>
+        <td class="yt-num">55</td>
+      </tr>
+      <tr class="yt-crisis">
+        <td><div class="yt-yr">1992</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">61</td>
+      </tr>
+      <tr class="yt-crisis">
+        <td><div class="yt-yr">1993</div></td>
+        <td>留学生派遣</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">47</td>
+      </tr>
+      <tr class="yt-crisis">
+        <td><div class="yt-yr">1994</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">59</td>
+      </tr>
+      <tr class="yt-crisis">
+        <td><div class="yt-yr">1995</div></td>
+        <td>留学生派遣。姉妹提携10周年記念友好訪問団を相互に派遣受入</td>
+        <td class="yt-dash">─</td>
+        <td><span class="yt-em">条件付存続案が提示</span>。「存続突破町民の集い」開催。H8年4月に41名以上入学なければ廃校の危機に。魅力ある学校づくりに着手。校舎改築を含む教育環境の整備を決定</td>
+        <td class="yt-num" style="color:#c8102e">45</td>
+      </tr>
+      <tr class="yt-recover">
+        <td><div class="yt-yr">1996</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td><span class="yt-em">AETを2人体制に。こども園〜高校まで全校英語教育を開始</span></td>
+        <td>高校1年生全員留学の具体策を検討</td>
+        <td class="yt-num" style="color:#1a8a45">72</td>
+      </tr>
+      <tr class="yt-recover">
+        <td><div class="yt-yr">1997</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td><span class="yt-em">1年生全員がストニィプレイン町へ短期留学</span>（全国初）</td>
+        <td class="yt-num">69</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">1998</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td>基本方針を策定（<span class="yt-em">●国際理解教育 ●情報教育</span>の2本柱で推進）</td>
+        <td class="yt-num">65</td>
+      </tr>
+      <tr>
+        <td><div class="yt-yr">1999</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td>学校教育法の改正により<span class="yt-em">中高一貫教育の導入が可能に</span></td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">65</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2000</div></td>
+        <td>姉妹提携15周年記念友好訪問団を相互に派遣受入。留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">59</td>
+      </tr>
+      <tr>
+        <td><div class="yt-yr">2001</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td><span class="yt-em">連携型中高一貫教育導入の準備委員会を立ち上げ</span></td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">71</td>
+      </tr>
+      <tr class="yt-mext">
+        <td><div class="yt-yr">2002</div></td>
+        <td>留学生・友好訪問団受入（友好訪問団派遣も実施）</td>
+        <td>文科省<span class="yt-em">「連携型中高一貫教育推進校」に指定</span></td>
+        <td><span class="yt-em">新校舎完成</span></td>
+        <td class="yt-num">79</td>
+      </tr>
+      <tr class="yt-mext">
+        <td><div class="yt-yr">2003</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td>第1期文科省<span class="yt-em">「研究開発学校」指定</span>（3年間、小中高全8校）。小中高で一貫した英語教育を<span class="yt-em">「カナダ学」</span>として研究開始。英語専任教員10名を加配</td>
+        <td>研究科目：カナダ学（英語）・BS英語・BS数学・おかしな学（地域学習）</td>
+        <td class="yt-num">60</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2004</div></td>
+        <td>アルバータ州・日本姉妹都市会議出席。留学生・友好訪問団受入</td>
+        <td>総合的な学習の時間で<span class="yt-em">「おかしな学」</span>を導入</td>
+        <td><span class="yt-em">コース制を導入</span>（特別進学・国際教養・情報ビジネスの3コース）</td>
+        <td class="yt-num">68</td>
+      </tr>
+      <tr>
+        <td><div class="yt-yr">2005</div></td>
+        <td>姉妹提携20周年記念友好訪問団を相互に派遣受入。留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">75</td>
+      </tr>
+      <tr class="yt-mext">
+        <td><div class="yt-yr">2006</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td>第2期研究開発事業指定。研究科目：カナダ学・BS英語・BS数学・おかしな学</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">60</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2007</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">68</td>
+      </tr>
+      <tr>
+        <td><div class="yt-yr">2008</div></td>
+        <td>ストニィプレイン町開町100周年記念友好訪問団派遣。留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">77</td>
+      </tr>
+      <tr class="yt-mext">
+        <td><div class="yt-yr">2009</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td>第3期研究開発事業指定。研究科目：カナダ学（英語）・地球学（環境教育）・実社会数学（数学）</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">67</td>
+      </tr>
+      <tr class="yt-award">
+        <td><div class="yt-yr">2010</div></td>
+        <td>姉妹提携25周年記念友好訪問団を相互に派遣受入。留学生・友好訪問団受入。<span class="yt-em">第4回姉妹自治体交流表彰で総務大臣賞受賞</span></td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">64</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2011</div></td>
+        <td>ストニィプレイン町議会議員来町</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">58</td>
+      </tr>
+      <tr class="yt-mext">
+        <td><div class="yt-yr">2012</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td>第4期研究開発事業指定。研究科目：新地球学（環境教育）・カナダ学（英語）・実社会数学（数学）</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">66</td>
+      </tr>
+      <tr class="yt-award">
+        <td><div class="yt-yr">2013</div></td>
+        <td>友好訪問団派遣・受入</td>
+        <td><span class="yt-em">日本ジオパークに認定</span>。ジオパーク活動をESD（持続可能な開発のための教育）に取り入れる</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">72</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2014</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">78</td>
+      </tr>
+      <tr class="yt-mext">
+        <td><div class="yt-yr">2015</div></td>
+        <td>姉妹提携30周年記念友好訪問団を相互に派遣受入。留学生・友好訪問団受入。ストニィプレインからの<span class="yt-em">長期滞在体験事業を開始</span></td>
+        <td>第5期研究開発事業指定。研究科目：地球コミュニケーション（英語）・新地球学（環境教育）</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">74</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2016</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">79</td>
+      </tr>
+      <tr>
+        <td><div class="yt-yr">2017</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">63</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2018</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td>研究開発事業指定終了に伴い、<span class="yt-em">一貫型コミュニティースクールを導入</span></td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">58</td>
+      </tr>
+      <tr>
+        <td><div class="yt-yr">2019</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td>探究学習<span class="yt-em">「鹿追創生アカデミアプロジェクト」</span>開始</td>
+        <td class="yt-num">62</td>
+      </tr>
+      <tr class="yt-covid">
+        <td><div class="yt-yr">2020</div></td>
+        <td><span class="yt-em">COVID-19により派遣事業を中止</span></td>
+        <td class="yt-dash">─</td>
+        <td>コース制を再編</td>
+        <td class="yt-num" style="color:#c8102e">28</td>
+      </tr>
+      <tr class="yt-covid">
+        <td><div class="yt-yr">2021</div></td>
+        <td><span class="yt-em">COVID-19により派遣事業を中止</span></td>
+        <td class="yt-dash">─</td>
+        <td>オンライン公設塾を開始</td>
+        <td class="yt-num">56</td>
+      </tr>
+      <tr class="yt-recover">
+        <td><div class="yt-yr">2022</div></td>
+        <td><span class="yt-em">友好訪問団派遣を再開</span></td>
+        <td class="yt-dash">─</td>
+        <td><span class="yt-em">入学者の全国募集を開始</span></td>
+        <td class="yt-num">49</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2023</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">52</td>
+      </tr>
+      <tr class="yt-recover">
+        <td><div class="yt-yr">2024</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td>全国募集により入学者大幅増加。<span class="yt-em">77.9%が町外生徒</span></td>
+        <td class="yt-num" style="color:#1a8a45">75</td>
+      </tr>
+      <tr class="yt-even">
+        <td><div class="yt-yr">2025</div></td>
+        <td><span class="yt-em">姉妹提携40周年</span>。留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num" style="color:#1a8a45">79</td>
+      </tr>
+      <tr class="yt-recover">
+        <td><div class="yt-yr">2026</div></td>
+        <td>留学生・友好訪問団受入</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-dash">─</td>
+        <td class="yt-num">45</td>
+      </tr>
+    </tbody>
+  </table>
+  </div><!-- /yt-table-wrap -->
+
+</div>
+
+<!-- ══ フォーラム21 質問事項・回答 ══ -->
+<div class="page">
+  <div class="page-header">
+    <div class="ph-main">
+      <h1>フォーラム21 質問事項と回答</h1>
+      <div class="sub">鹿追町教育委員会へのご質問（フォーラム21 質問事項より）</div>
+    </div>
+  </div>
+
+  <div class="qa-section">
+    <div class="qa-section-title">○ 留学支援の目的と制度設計</div>
+
+    <div class="qa-item">
+      <div class="qa-q">留学支援の目的と予算</div>
+      <div class="qa-a">英語教育の充実とコミュニケーション力の向上、そして姉妹町交流における親善大使としての役割を目的としています。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">個人負担と公的負担の考え方</div>
+      <div class="qa-a">個人負担を事業費の１割に設定することで、家庭の経済環境に左右されることなく全員が参加できる仕組みとしています。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">留学に予算を配分することで影響を受けている政策はあるか。優先順位をどのように上げるか</div>
+      <div class="qa-a">教育予算以外への影響は特にありません。本事業は姉妹都市交流としての位置づけが確立されており、その位置づけに変更がない限り、優先順位が議論の俎上に上がることはありません。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">留学のプログラム内容について学校との連携はされているのか（町としての意向はどの程度反映されているか）</div>
+      <div class="qa-a">生徒を姉妹町の親善大使として位置づけることを基本方針としています。本事業は町が設計し、学校が教育課程に組み込んで参加する形で運営しており、町の意向はプログラム全体に反映されています。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">町立中学校との連携はあるか</div>
+      <div class="qa-a">こども園から高校まで一貫する英語教育において、カナダ短期留学は最終的な実践の場として位置づけられています。中学校段階での英語教育もこの留学を見据えた取り組みとなっています。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">学校・行政関係者ではない町民の関わり方</div>
+      <div class="qa-a">カナダから交換留学生や友好訪問団を受け入れる際に、町民がホストファミリーとして関わっています。国際交流を町全体で支える仕組みとなっています。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">北海道全体に広げる場合の課題はどのようなことが考えられるか。鹿追高校モデルの展開など</div>
+      <div class="qa-a">自治体と高校の設置者が異なる場合の共通理解の形成が大きな課題です。本町のモデルは町主体の国際交流事業と高校教育が一体的に結びついたものであり、他地域への展開には各地域の実情に応じた工夫が必要です。</div>
+    </div>
+  </div>
+
+  <div class="qa-section">
+    <div class="qa-section-title">○ 留学支援の成果</div>
+
+    <div class="qa-item">
+      <div class="qa-q">留学支援の効果はどのように評価されているのか</div>
+      <div class="qa-a">高校の生徒数の確保、英語教育への意欲の向上、そして姉妹町交流の中心的な事業としての機能という3点で効果を評価しています。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">鹿追高校の高校生は町以外からの進学者もいる中で、町民の理解や支援を得るための工夫はあるか</div>
+      <div class="qa-a">カナダへの短期留学は鹿追高校に入学する際の前提として広く定着しており、現在のところ町民から特に異論や苦情は出ていません。</div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">これまでに中止の議論（効果・予算など）がされたことはあるか。どのように乗り越えたか（継続する価値）</div>
+      <div class="qa-a">これまで事業の中止を議論したことは特にありません。長年にわたり地域に根付いた事業として継続されています。</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鹿追町 IB教育 視察資料 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --main:   #1a7a8a;
+  --dark:   #135f6d;
+  --mid:    #2a9db0;
+  --accent: #e85d04;
+  --yellow: #f6c90e;
+  --gray:   #4a5568;
+  --bg:     #f7fafc;
+  --border: #cbd5e0;
+  --text:   #1a202c;
+  --light:  #e6f4f6;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ── NAV ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--dark);
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 3px solid var(--accent);
+  scrollbar-width: none;
+}
+nav::-webkit-scrollbar { display: none; }
+nav a {
+  flex: 1;
+  min-width: 160px;
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  color: rgba(255,255,255,.82);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background .2s, color .2s;
+  border-right: 1px solid rgba(255,255,255,.12);
+}
+nav a:last-child { border-right: none; }
+nav a:hover  { background: var(--main); color: #fff; }
+nav a.active { background: var(--accent); color: #fff; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--main) 60%, var(--mid) 100%);
+  color: #fff;
+  padding: 56px 5%;
+  text-align: center;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,.18);
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 30px;
+  padding: 7px 24px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: .04em;
+}
+.hero h1 {
+  font-size: clamp(26px, 4.5vw, 52px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.hero-sub {
+  font-size: clamp(17px, 2.2vw, 22px);
+  color: rgba(255,255,255,.88);
+  margin-bottom: 40px;
+}
+.hero-stats {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 14px;
+  padding: 20px 32px;
+  text-align: center;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-stat-num {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  line-height: 1.1;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.hero-stat-lbl {
+  font-size: 16px;
+  color: rgba(255,255,255,.88);
+  margin-top: 10px;
+  line-height: 1.4;
+  border-top: 1px solid rgba(255,255,255,.25);
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* ── SECTION WRAPPER ── */
+section {
+  padding: 56px 5%;
+}
+section:nth-child(even) { background: #fff; }
+section:nth-child(odd)  { background: var(--bg); }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 36px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid var(--border);
+}
+.section-num {
+  width: 52px; height: 52px;
+  background: var(--main);
+  color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 900;
+  flex-shrink: 0;
+}
+.section-title {
+  font-size: clamp(20px, 2.8vw, 30px);
+  font-weight: 900;
+  color: var(--dark);
+}
+.section-subtitle {
+  font-size: 17px;
+  color: var(--gray);
+  margin-top: 4px;
+}
+
+/* ── SUB LABEL ── */
+.sl {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main);
+  border-left: 5px solid var(--main);
+  padding-left: 12px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.sl:first-child { margin-top: 0; }
+
+/* ── CARD ── */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+}
+
+/* ── GRIDS ── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+
+/* ── OVERVIEW ITEMS ── */
+.ov-item {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 18px;
+  background: var(--bg);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.ov-icon {
+  width: 46px; height: 46px;
+  background: var(--main); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.ov-icon svg { width: 26px; height: 26px; fill: #fff; }
+.ov-lbl { font-size: 17px; font-weight: 700; color: var(--dark); }
+.ov-val { font-size: 17px; color: var(--gray); line-height: 1.45; margin-top: 4px; }
+
+/* ── PROGRAM BAR CHART ── */
+.prog-wrap { overflow-x: auto; }
+.prog-chart { min-width: 520px; }
+
+.prog-axis-row {
+  display: flex;
+  margin-left: 170px;
+  margin-right: 200px;
+  position: relative;
+  height: 28px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 12px;
+}
+.prog-axis-row span {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #666;
+  bottom: 4px;
+}
+
+.prog-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.prog-lbl {
+  width: 170px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 10px;
+}
+.prog-lbl-en  { font-size: 19px; font-weight: 900; }
+.prog-lbl-ja  { font-size: 16px; color: #666; }
+.prog-track {
+  flex: 1;
+  height: 44px;
+  background: #e8edf2;
+  border-radius: 8px;
+  position: relative;
+  overflow: visible;
+}
+.prog-bar {
+  position: absolute;
+  top: 0; height: 100%;
+  border-radius: 8px;
+}
+.prog-bar.pyp { background: var(--main); }
+.prog-bar.myp {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--accent);
+  z-index: 2;
+}
+.prog-bar.dp  { background: var(--dark); }
+.prog-bar.cp  { background: #5a6fb0; }
+.prog-tag {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,.92);
+  color: var(--accent);
+  font-size: 16px; font-weight: 900;
+  padding: 2px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.prog-desc {
+  font-size: 17px;
+  color: #555;
+  flex-shrink: 0;
+  width: 200px;
+  line-height: 1.4;
+}
+.prog-note {
+  font-size: 16px;
+  color: #888;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+/* ── FEATURE GRID ── */
+.feat-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.feat-ico { font-size: 28px; flex-shrink: 0; }
+.feat-lbl { font-size: 18px; font-weight: 700; color: var(--dark); display: block; line-height: 1.3; }
+.feat-dsc { font-size: 17px; color: var(--gray); display: block; line-height: 1.45; margin-top: 5px; }
+
+/* ── STAT HBOX ── */
+.hbox {
+  background: linear-gradient(135deg, var(--main) 0%, var(--mid) 100%);
+  border-radius: 12px;
+  padding: 28px 24px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 0;
+}
+.hbox-item {
+  text-align: center;
+  padding: 0 20px;
+  border-right: 1px solid rgba(255,255,255,.3);
+}
+.hbox-item:last-child { border-right: none; }
+.hbox-num  { font-size: clamp(24px,3.2vw,40px); font-weight: 900; line-height: 1.1; display: block; }
+.hbox-unit { font-size: 20px; font-weight: 700; }
+.hbox-lbl  { font-size: 17px; color: rgba(255,255,255,.9); line-height: 1.4; margin-top: 10px; display: block; }
+
+/* ── ATL NOTE ── */
+.atl-note {
+  font-size: 16px; color: #888;
+  margin-top: 14px;
+  line-height: 1.5;
+  padding: 10px 14px;
+  background: var(--bg);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+/* ── LEAD ── */
+.lead {
+  background: var(--light);
+  border-left: 5px solid var(--main);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 28px;
+  font-size: 18px;
+  line-height: 1.75;
+}
+.lead strong { color: var(--dark); }
+
+/* ── TIMELINE ── */
+.tl-phase-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 28px 0 12px;
+}
+.tl-phase-line { flex: 1; height: 2px; }
+.tl-phase-line.a { background: var(--main); }
+.tl-phase-line.b { background: var(--mid); }
+.tl-phase-line.c { background: var(--accent); }
+.tl-phase-tag {
+  color: #fff;
+  font-size: 17px; font-weight: 700;
+  padding: 7px 22px;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+.tl-phase-tag.a { background: var(--main); }
+.tl-phase-tag.b { background: var(--mid); }
+.tl-phase-tag.c { background: var(--accent); }
+
+.tl-events {
+  padding-left: 36px;
+  border-left: 3px solid var(--main);
+  position: relative;
+}
+.tl-events.phase-b { border-left-color: var(--mid); }
+.tl-events.phase-c { border-left-color: var(--accent); }
+
+.tl-ev {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 9px 0;
+  position: relative;
+}
+.tl-ev::before {
+  content: '';
+  position: absolute;
+  left: -36px;
+  transform: translateX(-50%);
+  top: 15px;
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--main);
+  z-index: 1;
+}
+.tl-events.phase-b .tl-ev::before { border-color: var(--mid); }
+.tl-events.phase-c .tl-ev::before { border-color: var(--accent); background: rgba(232,93,4,.15); }
+
+.tl-ev.ms::before {
+  background: var(--accent);
+  border-color: var(--accent);
+  width: 15px; height: 15px;
+  top: 14px;
+  box-shadow: 0 0 0 3px rgba(232,93,4,.22);
+}
+
+.tl-ev-date {
+  width: 165px;
+  flex-shrink: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--dark);
+  padding-top: 1px;
+}
+.tl-ev-txt { font-size: 18px; color: var(--gray); line-height: 1.5; }
+.tl-ev-txt.ms     { font-weight: 700; color: var(--text); }
+.tl-ev-txt.accent { font-weight: 700; color: var(--accent); }
+.tl-ev-txt.teal   { font-weight: 700; color: var(--dark); }
+
+/* ── NATIONWIDE ── */
+.nw {
+  background: #fffde7;
+  border: 2px solid var(--yellow);
+  border-radius: 14px;
+  padding: 40px 48px;
+  text-align: center;
+  margin-top: 32px;
+}
+.nw-badge {
+  display: inline-block;
+  background: var(--yellow);
+  color: #7b4f00;
+  font-size: 19px; font-weight: 900;
+  padding: 7px 28px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+}
+.nw-claim {
+  font-size: clamp(19px, 2.6vw, 28px);
+  font-weight: 900;
+  line-height: 1.5;
+}
+.nw-em {
+  color: var(--accent);
+  font-size: clamp(23px, 3.2vw, 34px);
+}
+
+/* ── BAR CHART ── */
+.bar-chart-area {
+  display: flex;
+  align-items: flex-end;
+  gap: 28px;
+  height: 210px;
+  padding-left: 48px;
+  position: relative;
+  border-bottom: 2px solid var(--border);
+}
+.bar-grid-line {
+  position: absolute;
+  left: 48px; right: 0;
+  border-top: 1px dashed #e2e8f0;
+  display: flex; align-items: center;
+}
+.bar-grid-lbl {
+  position: absolute;
+  left: 0;
+  font-size: 15px;
+  color: #999;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+.bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 0;
+}
+.bar-amount { font-size: 17px; font-weight: 900; color: var(--dark); margin-bottom: 5px; }
+.bar-amount.accent { color: var(--accent); }
+.bar-fill {
+  width: 80%;
+  border-radius: 6px 6px 0 0;
+}
+.bar-xlabels {
+  display: flex;
+  gap: 28px;
+  padding-left: 48px;
+  margin-top: 10px;
+}
+.bar-xlabel {
+  flex: 1;
+  text-align: center;
+}
+.bar-xlabel-year { font-size: 17px; font-weight: 700; color: #555; }
+.bar-xlabel-sub  { font-size: 15px; color: #888; }
+
+/* ── DONUT LEGEND ── */
+.pie-wrap  { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.leg       { flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 10px; }
+.leg-row   { display: flex; align-items: center; gap: 10px; font-size: 17px; }
+.leg-dot   { width: 16px; height: 16px; border-radius: 4px; flex-shrink: 0; }
+.leg-name  { flex: 1; color: var(--gray); }
+.leg-val   { font-weight: 700; white-space: nowrap; }
+.leg-pct   { color: #999; font-weight: 400; margin-left: 4px; }
+.leg-total { border-top: 1px solid var(--border); padding-top: 10px; font-size: 18px; font-weight: 900; color: var(--dark); }
+
+/* ── EMPH BOXES ── */
+.emph-box { border-radius: 12px; padding: 22px; text-align: center; border: 2px solid transparent; }
+.emph-lbl { font-size: 17px; font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
+.emph-num { display: block; font-size: clamp(26px, 3vw, 40px); font-weight: 900; line-height: 1.15; }
+.emph-sub { font-size: 16px; color: #777; margin-top: 6px; line-height: 1.4; }
+
+/* ── OUTLOOK CARDS ── */
+.outlook-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--main);
+  border-radius: 0 0 12px 12px;
+  padding: 22px;
+  text-align: center;
+}
+.outlook-ico { font-size: 34px; display: block; margin-bottom: 10px; }
+.outlook-ttl { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.35; }
+.outlook-dsc { font-size: 17px; color: var(--gray); line-height: 1.5; }
+
+/* ── FIN NOTE ── */
+.fin {
+  background: #fff9e6;
+  border: 1px solid #f0c040;
+  border-radius: 8px;
+  padding: 16px 22px;
+  font-size: 17px;
+  color: #7a5200;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+/* ── NG ITEMS ── */
+.ng-intro { font-size: 18px; color: #555; line-height: 1.65; margin-bottom: 24px; }
+.ng-list  { display: flex; flex-direction: column; gap: 18px; }
+.ng-item  { border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; }
+.ng-head  {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 22px;
+  background: #fff5f5;
+  border-bottom: 1px solid #fed7d7;
+}
+.ng-badge {
+  font-size: 16px; font-weight: 900; color: #fff;
+  background: #c53030; border-radius: 6px;
+  padding: 4px 12px; flex-shrink: 0;
+}
+.ng-ttl { font-size: 18px; font-weight: 700; color: #c53030; }
+.ng-body { padding: 18px 22px; display: flex; flex-direction: column; gap: 12px; }
+.ng-reason { font-size: 18px; color: #555; line-height: 1.55; }
+.ng-ok { display: flex; gap: 14px; align-items: flex-start; }
+.ok-badge {
+  font-size: 16px; font-weight: 900; color: #fff;
+  background: #276749; border-radius: 6px;
+  padding: 4px 12px; flex-shrink: 0;
+  white-space: nowrap; margin-top: 2px;
+}
+.ng-ok-txt {
+  font-size: 18px; color: #276749; font-weight: 700;
+  line-height: 1.55;
+  border-left: 4px solid #9ae6b4;
+  padding-left: 14px;
+}
+
+/* ── CHART NOTE ── */
+.chart-note {
+  font-size: 16px; color: #555; line-height: 1.6;
+  margin-top: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--dark);
+  color: rgba(255,255,255,.85);
+  padding: 40px 5%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.9;
+}
+footer strong { color: #fff; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .hbox { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .hbox-item { border-right: none; padding: 14px; border-bottom: 1px solid rgba(255,255,255,.25); }
+  .hbox-item:nth-child(2n) { border-bottom: 1px solid rgba(255,255,255,.25); }
+  .hbox-item:nth-last-child(-n+2) { border-bottom: none; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 860px) {
+  section { padding: 40px 4%; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .hbox { grid-template-columns: 1fr 1fr; }
+  .prog-desc { width: 130px; font-size: 15px; }
+  nav a { font-size: 15px; padding: 12px 14px; min-width: 130px; }
+  .tl-ev-date { width: 130px; font-size: 16px; }
+  .pie-wrap { flex-direction: column; align-items: flex-start; }
+  .nw { padding: 28px 20px; }
+}
+@media (max-width: 560px) {
+  .hero { padding: 36px 4%; }
+  .hero-stats { gap: 12px; }
+  .hero-stat { padding: 14px 20px; min-width: 130px; }
+  .tl-ev { flex-direction: column; gap: 2px; }
+  .tl-ev-date { width: auto; }
+  .hbox { grid-template-columns: 1fr; }
+  .hbox-item { border-bottom: 1px solid rgba(255,255,255,.2) !important; }
+  .hbox-item:last-child { border-bottom: none !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav id="main-nav">
+  <a href="#s1">① IBとは何か</a>
+  <a href="#s2">② 取り組み経緯</a>
+  <a href="#s3">③ 財政・展望</a>
+  <a href="#s4">④ 説明のポイント</a>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <div class="hero-badge">視察資料 ｜ 鹿追町教育委員会 ｜ 令和8年（2026年）</div>
+  <h1>鹿追町 国際バカロレア（IB）<br>教育視察資料</h1>
+  <p class="hero-sub">北海道鹿追町の全公立中学校がMYP認定校となった全国初の事例</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num" style="font-size:clamp(22px,3.5vw,36px);">全国<br><span style="font-size:1.5em;line-height:1;">初</span></span>
+      <div class="hero-stat-lbl">自治体内全公立中の<br>IB認定</div>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">2<span style="font-size:.55em;font-weight:700;">校</span></span>
+      <div class="hero-stat-lbl">鹿追中・瓜幕中<br>MYP認定（R7.12月）</div>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">47<span style="font-size:.55em;font-weight:700;">校中</span></span>
+      <div class="hero-stat-lbl">国内MYP認定校<br>公立は極めて稀少</div>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">3<span style="font-size:.55em;font-weight:700;">校</span></span>
+      <div class="hero-stat-lbl">北海道内MYP<br>認定公立中学校数</div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== S1: IBとは ==================== -->
+<section id="s1">
+  <div class="section-header">
+    <div class="section-num">1</div>
+    <div>
+      <div class="section-title">国際バカロレア（IB）とは何か</div>
+      <div class="section-subtitle">概要 ・ 4つのプログラム ・ MYPの特徴 ・ 国内での位置づけ</div>
+    </div>
+  </div>
+
+  <div class="sl">IBの基本概要</div>
+  <div class="grid-2">
+    <div class="ov-item">
+      <div class="ov-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+      <div><div class="ov-lbl">正式名称</div><div class="ov-val">国際バカロレア（International Baccalaureate）</div></div>
+    </div>
+    <div class="ov-item">
+      <div class="ov-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+      <div><div class="ov-lbl">本部・設立</div><div class="ov-val">ジュネーブ（スイス）、1968年設立</div></div>
+    </div>
+    <div class="ov-item">
+      <div class="ov-icon"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
+      <div><div class="ov-lbl">目的</div><div class="ov-val">世界の複雑さを理解し、未来に責任ある行動をとれる子どもを育成</div></div>
+    </div>
+    <div class="ov-item">
+      <div class="ov-icon"><svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg></div>
+      <div><div class="ov-lbl">認定規模（令和8年3月）</div><div class="ov-val">世界162ヵ国・約6,000校 ／ 日本国内265校</div></div>
+    </div>
+  </div>
+
+  <div class="sl">4つのプログラム ― 対象年齢と鹿追町が取得した認定</div>
+  <div class="card">
+    <div class="prog-wrap">
+      <div class="prog-chart">
+        <!-- 年齢軸 -->
+        <div class="prog-axis-row">
+          <span style="left:0%">3歳</span>
+          <span style="left:18.75%">6歳</span>
+          <span style="left:37.5%">9歳</span>
+          <span style="left:56.25%">12歳</span>
+          <span style="left:81.25%">16歳</span>
+          <span style="left:100%">19歳</span>
+        </div>
+        <!-- PYP 3〜12歳: 0%〜56.25% -->
+        <div class="prog-row">
+          <div class="prog-lbl">
+            <div class="prog-lbl-en" style="color:var(--main);">PYP</div>
+            <div class="prog-lbl-ja">初等教育 3〜12歳</div>
+          </div>
+          <div class="prog-track">
+            <div class="prog-bar pyp" style="left:0%;width:56.25%;"></div>
+          </div>
+          <div class="prog-desc">探究を基盤とした学び</div>
+        </div>
+        <!-- MYP 11〜16歳: 50%〜81.25% → width=31.25% -->
+        <div class="prog-row">
+          <div class="prog-lbl">
+            <div class="prog-lbl-en" style="color:var(--accent);">MYP</div>
+            <div class="prog-lbl-ja" style="color:var(--accent);">中等教育 11〜16歳</div>
+          </div>
+          <div class="prog-track">
+            <div class="prog-bar myp" style="left:50%;width:31.25%;">
+              <span class="prog-tag">★ 鹿追町</span>
+            </div>
+          </div>
+          <div class="prog-desc">8教科横断・概念型学習</div>
+        </div>
+        <!-- DP 16〜19歳: 81.25%〜100% → width=18.75% -->
+        <div class="prog-row">
+          <div class="prog-lbl">
+            <div class="prog-lbl-en">DP</div>
+            <div class="prog-lbl-ja">ディプロマ 16〜19歳</div>
+          </div>
+          <div class="prog-track">
+            <div class="prog-bar dp" style="left:81.25%;width:18.75%;"></div>
+          </div>
+          <div class="prog-desc">国際的大学入学資格</div>
+        </div>
+        <!-- CP 16〜19歳 -->
+        <div class="prog-row">
+          <div class="prog-lbl">
+            <div class="prog-lbl-en">CP</div>
+            <div class="prog-lbl-ja">キャリア関連 16〜19歳</div>
+          </div>
+          <div class="prog-track">
+            <div class="prog-bar cp" style="left:81.25%;width:18.75%;"></div>
+          </div>
+          <div class="prog-desc">職業・キャリア重視</div>
+        </div>
+        <div class="prog-note">
+          ※ オレンジ色のMYPが鹿追町両中学校（鹿追中・瓜幕中）が取得したプログラムです
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sl">MYP（中等教育プログラム）の特徴</div>
+  <div class="grid-2">
+    <div class="feat-item">
+      <span class="feat-ico">🔍</span>
+      <div>
+        <span class="feat-lbl">全8教科で探究型授業</span>
+        <span class="feat-dsc">生徒が問いを立て調べ考え発表。一方的講義から双方向の探究へ転換</span>
+      </div>
+    </div>
+    <div class="feat-item">
+      <span class="feat-ico">🌐</span>
+      <div>
+        <span class="feat-lbl">グローバルコンテキスト</span>
+        <span class="feat-dsc">教科横断的な6つの文脈で学びを統合し現実社会と接続</span>
+      </div>
+    </div>
+    <div class="feat-item">
+      <span class="feat-ico">🧠</span>
+      <div>
+        <span class="feat-lbl">ATL<sup style="font-size:13px">※</sup>スキルの育成</span>
+        <span class="feat-dsc">思考・協働・自己管理・社会的・リサーチの5カテゴリーを全教科で系統的に育成</span>
+      </div>
+    </div>
+    <div class="feat-item">
+      <span class="feat-ico">🏘️</span>
+      <div>
+        <span class="feat-lbl">コミュニティプロジェクト</span>
+        <span class="feat-dsc">地域課題に挑む探究・行動・振り返りの実践（鹿追町の自然・農業・文化が舞台）</span>
+      </div>
+    </div>
+  </div>
+  <div class="atl-note">
+    ※ ATL（Approaches to Learning）＝「学び方へのアプローチ」。IBが定める、教科を問わず生涯にわたって活用できる汎用的スキルの体系。
+  </div>
+
+  <div class="sl">日本国内でのMYPの位置づけ</div>
+  <div class="hbox">
+    <div class="hbox-item">
+      <span class="hbox-num">47<span class="hbox-unit">校</span></span>
+      <span class="hbox-lbl">国内MYP認定校数（令和8年3月）</span>
+    </div>
+    <div class="hbox-item">
+      <span class="hbox-num" style="font-size:clamp(20px,2.5vw,28px);">大多数</span>
+      <span class="hbox-lbl">を中高一貫校（私立）が占める</span>
+    </div>
+    <div class="hbox-item">
+      <span class="hbox-num" style="font-size:clamp(18px,2vw,24px);">極めて稀少</span>
+      <span class="hbox-lbl">一般公立中でのMYP認定</span>
+    </div>
+    <div class="hbox-item">
+      <span class="hbox-num">3<span class="hbox-unit">校</span></span>
+      <span class="hbox-lbl">北海道内MYP認定公立中学校数</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== S2: 取り組み ==================== -->
+<section id="s2">
+  <div class="section-header">
+    <div class="section-num" style="background:var(--accent);">2</div>
+    <div>
+      <div class="section-title">鹿追町のIB教育への取り組み ― 経緯とビジョン</div>
+      <div class="section-subtitle">IB導入の背景 ・ タイムライン ・ 全国での位置づけ</div>
+    </div>
+  </div>
+
+  <div class="sl">なぜIBに取り組んだか</div>
+  <div class="lead">
+    鹿追町は<strong>約25年以上にわたり幼小中高一貫教育</strong>を推進してきた。
+    探究学習を一部の教員や「総合的な学習の時間」だけに依存せず、
+    <strong>学校全体で体系的に展開できる手法</strong>としてIBに着目。
+    令和5年策定の<strong>「鹿追町教育大綱」</strong>に「義務教育における国際バカロレア認定」を明記し、
+    <strong>町の教育政策の中核</strong>に位置づけている。
+  </div>
+
+  <div class="sl">認定までの歩み ― タイムライン</div>
+  <div class="card">
+
+    <!-- フェーズ1 -->
+    <div class="tl-phase-header">
+      <div class="tl-phase-line a"></div>
+      <div class="tl-phase-tag a">検討・準備フェーズ（令和3〜4年）</div>
+      <div class="tl-phase-line a"></div>
+    </div>
+    <div class="tl-events phase-a">
+      <div class="tl-ev">
+        <div class="tl-ev-date">R3.1月（2021）</div>
+        <div class="tl-ev-txt">鹿追高校よりIB教育導入の打診</div>
+      </div>
+      <div class="tl-ev">
+        <div class="tl-ev-date">R4.4月（2022）</div>
+        <div class="tl-ev-txt">町長とのIB導入協議</div>
+      </div>
+      <div class="tl-ev">
+        <div class="tl-ev-date">R4.11月（2022）</div>
+        <div class="tl-ev-txt">両中学校・小学校の校長・コーディネーター研修開始（オンライン）</div>
+      </div>
+      <div class="tl-ev ms">
+        <div class="tl-ev-date">R4.3月（2023）</div>
+        <div class="tl-ev-txt ms">候補校申請（鹿追中・瓜幕中）</div>
+      </div>
+    </div>
+
+    <!-- フェーズ2 -->
+    <div class="tl-phase-header">
+      <div class="tl-phase-line b"></div>
+      <div class="tl-phase-tag b">候補校フェーズ（令和5〜7年）</div>
+      <div class="tl-phase-line b"></div>
+    </div>
+    <div class="tl-events phase-b">
+      <div class="tl-ev ms">
+        <div class="tl-ev-date">R5.4月（2023）</div>
+        <div class="tl-ev-txt teal">★ 候補校認定（鹿追中・瓜幕中）</div>
+      </div>
+      <div class="tl-ev">
+        <div class="tl-ev-date">R5〜7年</div>
+        <div class="tl-ev-txt">全教科でIBカリキュラムへ移行・教員研修・視察を集中実施（札幌開成中等・名古屋国際中・香北中等を視察）</div>
+      </div>
+      <div class="tl-ev ms">
+        <div class="tl-ev-date">R7年（2025）</div>
+        <div class="tl-ev-txt ms">定期テストを廃止、探究型評価へ全面移行</div>
+      </div>
+    </div>
+
+    <!-- フェーズ3 -->
+    <div class="tl-phase-header">
+      <div class="tl-phase-line c"></div>
+      <div class="tl-phase-tag c">認定フェーズ（令和7〜8年）★ クライマックス</div>
+      <div class="tl-phase-line c"></div>
+    </div>
+    <div class="tl-events phase-c">
+      <div class="tl-ev">
+        <div class="tl-ev-date">R7.8月（2025）</div>
+        <div class="tl-ev-txt">認定申請（鹿追中：8/8、瓜幕中：8/12）</div>
+      </div>
+      <div class="tl-ev">
+        <div class="tl-ev-date">R7.11月（2025）</div>
+        <div class="tl-ev-txt">IB機構による確認訪問・授業視察（鹿追中：11/10〜11、瓜幕中：11/13〜14）</div>
+      </div>
+      <div class="tl-ev ms">
+        <div class="tl-ev-date">R7.12月（2025）</div>
+        <div class="tl-ev-txt accent">🎉 MYP認定校として承認！（瓜幕中：12/1、鹿追中：12/11）</div>
+      </div>
+      <div class="tl-ev ms">
+        <div class="tl-ev-date">R8.1.13（2026）</div>
+        <div class="tl-ev-txt teal">文部科学省記者レクにて全国発表</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sl">全国・道内での位置づけ</div>
+  <div class="nw">
+    <div class="nw-badge">⭐ 全国初の快挙</div>
+    <div class="nw-claim">
+      「一つの自治体が設置する全ての公立中学校がIB認定校となるのは<br>
+      <span class="nw-em">全国で初めて</span>」
+    </div>
+  </div>
+</section>
+
+<!-- ==================== S3: 財政・展望 ==================== -->
+<section id="s3">
+  <div class="section-header">
+    <div class="section-num" style="background:var(--dark);">3</div>
+    <div>
+      <div class="section-title">財政情報と今後の展望</div>
+      <div class="section-subtitle">年度別投資額 ・ 年間維持費内訳 ・ 今後のビジョン</div>
+    </div>
+  </div>
+
+  <div class="sl">認定までの3年間投資（年度別）と認定後の年間維持費内訳</div>
+  <div class="grid-2">
+
+    <!-- 棒グラフ (CSS) -->
+    <div class="card">
+      <div style="font-size:18px;font-weight:700;color:var(--dark);text-align:center;margin-bottom:20px;">📊 年度別支出（令和5〜7年度）</div>
+
+      <!-- グラフ本体 -->
+      <div style="position:relative; padding-left:52px;">
+        <!-- グリッド線 -->
+        <div style="position:absolute;left:52px;right:0;top:0;height:200px;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none;">
+          <div style="border-top:1px dashed #e2e8f0;position:relative;">
+            <span style="position:absolute;right:100%;padding-right:6px;font-size:15px;color:#999;white-space:nowrap;top:-10px;">900万</span>
+          </div>
+          <div style="border-top:1px dashed #e2e8f0;position:relative;">
+            <span style="position:absolute;right:100%;padding-right:6px;font-size:15px;color:#999;white-space:nowrap;top:-10px;">600万</span>
+          </div>
+          <div style="border-top:1px dashed #e2e8f0;position:relative;">
+            <span style="position:absolute;right:100%;padding-right:6px;font-size:15px;color:#999;white-space:nowrap;top:-10px;">300万</span>
+          </div>
+          <div style="border-top:2px solid var(--border);"></div>
+        </div>
+        <!-- バー -->
+        <div style="display:flex;align-items:flex-end;gap:20px;height:200px;position:relative;z-index:1;">
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+            <div style="font-size:17px;font-weight:900;color:var(--dark);margin-bottom:5px;">359万円</div>
+            <div style="width:70%;background:#9dd0da;border-radius:6px 6px 0 0;height:39.9%;"></div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+            <div style="font-size:17px;font-weight:900;color:var(--dark);margin-bottom:5px;">588万円</div>
+            <div style="width:70%;background:#2a9db0;border-radius:6px 6px 0 0;height:65.3%;"></div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+            <div style="font-size:17px;font-weight:900;color:var(--accent);margin-bottom:5px;">829万円</div>
+            <div style="width:70%;background:var(--main);border-radius:6px 6px 0 0;height:92.1%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- X軸ラベル -->
+      <div style="display:flex;gap:20px;padding-left:52px;margin-top:10px;border-top:1px solid var(--border);padding-top:8px;">
+        <div style="flex:1;text-align:center;">
+          <div style="font-size:17px;font-weight:700;color:#555;">令和5年度</div>
+          <div style="font-size:15px;color:#888;">候補校1年目</div>
+        </div>
+        <div style="flex:1;text-align:center;">
+          <div style="font-size:17px;font-weight:700;color:#555;">令和6年度</div>
+          <div style="font-size:15px;color:#888;">候補校2年目</div>
+        </div>
+        <div style="flex:1;text-align:center;">
+          <div style="font-size:17px;font-weight:700;color:#555;">令和7年度</div>
+          <div style="font-size:15px;color:#888;">認定取得年</div>
+        </div>
+      </div>
+
+      <div style="text-align:right;margin-top:14px;">
+        <span style="display:inline-block;background:var(--accent);color:#fff;font-size:17px;font-weight:700;padding:5px 18px;border-radius:20px;">
+          3年間合計：約1,776万円
+        </span>
+      </div>
+      <div class="chart-note">
+        ※R7は候補校分・認定校分の年会費が二重発生（約630万円）。年度途中移行による1回限りの特殊事情。R8以降は認定校年会費のみに安定。
+      </div>
+    </div>
+
+    <!-- ドーナツグラフ -->
+    <div class="card">
+      <div style="font-size:18px;font-weight:700;color:var(--dark);text-align:center;margin-bottom:20px;">🍩 令和8年度〜 年間維持費内訳</div>
+      <div class="pie-wrap">
+        <svg width="160" height="160" viewBox="0 0 130 130" style="flex-shrink:0;">
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#e2e8f0" stroke-width="22"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#1a7a8a" stroke-width="22"
+            stroke-dasharray="144.5 144.5" stroke-dashoffset="0" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#e85d04" stroke-width="22"
+            stroke-dasharray="69.4 219.6" stroke-dashoffset="-144.5" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#f4a261" stroke-width="22"
+            stroke-dasharray="63.6 225.4" stroke-dashoffset="-213.9" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#a0aec0" stroke-width="22"
+            stroke-dasharray="11.6 277.4" stroke-dashoffset="-277.5" transform="rotate(-90 65 65)"/>
+          <text x="65" y="59" text-anchor="middle" font-size="11" fill="#888" font-family="sans-serif">年間</text>
+          <text x="65" y="75" text-anchor="middle" font-size="13" font-weight="bold" fill="#135f6d" font-family="sans-serif">約686万円</text>
+        </svg>
+        <div class="leg">
+          <div class="leg-row">
+            <div class="leg-dot" style="background:#1a7a8a;"></div>
+            <span class="leg-name">IBO年会費（2校）</span>
+            <span class="leg-val">343万円<span class="leg-pct">50%</span></span>
+          </div>
+          <div class="leg-row">
+            <div class="leg-dot" style="background:#e85d04;"></div>
+            <span class="leg-name">研修費</span>
+            <span class="leg-val">164万円<span class="leg-pct">24%</span></span>
+          </div>
+          <div class="leg-row">
+            <div class="leg-dot" style="background:#f4a261;"></div>
+            <span class="leg-name">旅費</span>
+            <span class="leg-val">150万円<span class="leg-pct">22%</span></span>
+          </div>
+          <div class="leg-row">
+            <div class="leg-dot" style="background:#a0aec0;"></div>
+            <span class="leg-name">活動費</span>
+            <span class="leg-val">30万円<span class="leg-pct">4%</span></span>
+          </div>
+          <div class="leg-total">合計：約686万円／年</div>
+        </div>
+      </div>
+      <div class="chart-note">
+        財源：鹿追町の自己財源<br>
+        ※年会費はSDR建てのため為替により変動する場合あり
+      </div>
+    </div>
+  </div>
+
+  <!-- 3強調ボックス -->
+  <div class="grid-3" style="margin-top:28px;">
+    <div class="emph-box" style="background:linear-gradient(135deg,#fff8e1,#fffde7);border-color:var(--yellow);">
+      <div class="emph-lbl" style="color:#856404;">3年間の総投資額</div>
+      <span class="emph-num" style="color:var(--dark);">約1,776万円</span>
+      <div class="emph-sub">R5〜R7年度累計</div>
+    </div>
+    <div class="emph-box" style="background:linear-gradient(135deg,#e6f4f6,#d0ecf0);border-color:var(--main);">
+      <div class="emph-lbl" style="color:var(--dark);">年間維持費（R8〜）</div>
+      <span class="emph-num" style="color:var(--main);">約686万円</span>
+      <div class="emph-sub">継続するために必要なコスト</div>
+    </div>
+    <div class="emph-box" style="background:linear-gradient(135deg,#fff0eb,#ffe8d6);border-color:var(--accent);">
+      <div class="emph-lbl" style="color:#7b2d00;">MYP認定47校中</div>
+      <span class="emph-num" style="color:var(--accent);">全国初</span>
+      <div class="emph-sub">自治体内全中学校の<br>IB認定</div>
+    </div>
+  </div>
+
+  <!-- 展望 -->
+  <div class="sl">今後の展望</div>
+  <div class="grid-3">
+    <div class="outlook-card">
+      <span class="outlook-ico">📚</span>
+      <div class="outlook-ttl">小学校へのIB導入（PYP）</div>
+      <div class="outlook-dsc">PYP導入も視野に入れ、幼小中高の<strong>完全一貫IB教育</strong>を目指す</div>
+    </div>
+    <div class="outlook-card">
+      <span class="outlook-ico">🏫</span>
+      <div class="outlook-ttl">鹿追高校IB認定支援</div>
+      <div class="outlook-dsc">教育大綱に「高等学校の国際バカロレア認定への支援」を明記。高校段階のIB化を推進</div>
+    </div>
+    <div class="outlook-card">
+      <span class="outlook-ico">🌟</span>
+      <div class="outlook-ttl">全国先進事例として発信</div>
+      <div class="outlook-dsc">他自治体・研究機関からの<strong>視察受入・情報発信</strong>を積極的に推進</div>
+    </div>
+  </div>
+
+  <div class="fin">
+    <strong>【財政補足】</strong>
+    令和7年度（約829万円）の年会費増加は、年度途中に候補校→認定校へ移行したため両方の年会費が発生した1回限りの特殊事情。
+    令和8年度以降は認定校年会費のみとなり、<strong>IBを継続するために必要なコストは約686万円／年</strong>となります。財源は鹿追町の自己財源です。
+  </div>
+</section>
+
+<!-- ==================== S4: 発言注意事項 ==================== -->
+<section id="s4">
+  <div class="section-header">
+    <div class="section-num" style="background:#c53030;">4</div>
+    <div>
+      <div class="section-title">保護者・関係者への説明で気をつけていること</div>
+      <div class="section-subtitle">IB教育を伝える際に鹿追町が特に意識していること</div>
+    </div>
+  </div>
+
+  <p class="ng-intro">保護者や地域の関係者の方々にIB教育をご説明する際に、鹿追町が特に意識していること・大切にしている伝え方をまとめています。誤解を招きやすいポイントと、実際にどのように伝えているかを対比してご紹介します。</p>
+
+  <div class="ng-list">
+    <div class="ng-item">
+      <div class="ng-head">
+        <span class="ng-badge">NG</span>
+        <span class="ng-ttl">「一部の優秀な生徒を育てる」「海外大学進学を目指す」といったエリート教育の強調</span>
+      </div>
+      <div class="ng-body">
+        <div class="ng-reason">英語教育への特化やエリート育成ではなく、学区内の<strong>すべての生徒</strong>を対象とした公教育です。</div>
+        <div class="ng-ok">
+          <span class="ok-badge">代わりに</span>
+          <span class="ng-ok-txt">「一部のエリートのためではなく、鹿追町で学ぶすべての子どもたちが、正解のない社会課題に向き合い、生き抜く力（課題解決能力）を育むための公教育です」</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-item">
+      <div class="ng-head">
+        <span class="ng-badge">NG</span>
+        <span class="ng-ttl">日本の従来の教育や「学習指導要領」を否定するような発言</span>
+      </div>
+      <div class="ng-body">
+        <div class="ng-reason">IBは日本の教育と対立するものではなく、学習指導要領が目指す「探究的な学び」を実践する<strong>枠組み（フレームワーク）</strong>として導入しています。</div>
+        <div class="ng-ok">
+          <span class="ok-badge">代わりに</span>
+          <span class="ng-ok-txt">「日本の教育を否定するのではなく、学習指導要領の理念を高いレベルで実現するための手段としてIBを活用しています」</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-item">
+      <div class="ng-head">
+        <span class="ng-badge">NG</span>
+        <span class="ng-ttl">「知識の暗記はもう古い」「基礎学力は不要」といった知識の軽視</span>
+      </div>
+      <div class="ng-body">
+        <div class="ng-reason">知識と探究の割合は<strong>約5対5</strong>であり、学力テストの点数も低下していません。「探究重視＝学力低下」との誤解を招く恐れがあります。</div>
+        <div class="ng-ok">
+          <span class="ok-badge">代わりに</span>
+          <span class="ng-ok-txt">「基礎学力を蔑ろにしているわけではありません。体験や探究を通じて知識を活用することで、本質的な知識の定着を図っています」</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-item">
+      <div class="ng-head">
+        <span class="ng-badge">NG</span>
+        <span class="ng-ttl">「現場はすぐに順応した」「行政の指示で簡単にできた」といった発言</span>
+      </div>
+      <div class="ng-body">
+        <div class="ng-reason">導入当初は現場の教員にも「具体的なイメージが湧きにくい」という戸惑いや摩擦がありました。</div>
+        <div class="ng-ok">
+          <span class="ok-badge">代わりに</span>
+          <span class="ng-ok-txt">「最初は現場にも戸惑いがありましたが、先生方が一丸となってマインドセットを変え、大変な努力をしてくれました」と、現場の先生方の奮闘を讃えています。</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-item">
+      <div class="ng-head">
+        <span class="ng-badge">NG</span>
+        <span class="ng-ttl">「全国初だからすごい」「学校のPR」といった見栄えだけのアピール</span>
+      </div>
+      <div class="ng-body">
+        <div class="ng-reason">先進的な取り組みを単にアピールしたかったわけではなく、<strong>認定はあくまでスタートライン</strong>です。</div>
+        <div class="ng-ok">
+          <span class="ok-badge">代わりに</span>
+          <span class="ng-ok-txt">「認定はゴールではありません。子どもたちを起点とした『町興し』であり、町の未来を持続可能にするための戦略的投資（まちづくり）です」という地域創生の視点でお話ししています。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <strong>鹿追町教育委員会</strong><br>
+  出典：国際バカロレア機構（IBO）公式データ・文部科学省資料・鹿追町IB推進協議会 提供資料<br>
+  令和8年（2026年）5月時点
+</footer>
+
+<script>
+(function() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks  = document.querySelectorAll('nav a');
+  const observer  = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`nav a[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { threshold: 0.25 });
+  sections.forEach(s => observer.observe(s));
+})();
+</script>
+
+</body>
+</html>
